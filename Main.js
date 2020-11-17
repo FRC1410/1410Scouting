@@ -42,6 +42,8 @@ let data = {
     Penalty_Minor: "0",
 }
 
-rqst.open(type, url, true);
-rqst.setRequestHeader("Content-Type", "application/json");
-SendBtn.onclick = function () {rqst.send(JSON.stringify(data));}
+SendBtn.onclick = function () {
+    rqst.open(type, url, true);
+    rqst.setRequestHeader("Content-Type", "application/json");
+    rqst.send(JSON.stringify(data));
+}
