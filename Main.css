@@ -8,3 +8,63 @@
     font-size: 16px;
 }
 .proletariat:active {background-color: #3e8e41}
+
+.BIGDATA {
+    background-color: #2b64ba;
+    border: none;
+    color: white;
+    padding: 50px 80px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.BIGDATA:active {background-color: #173965
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabContent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.BAD {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 50px 80px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+.BAD:active {background-color: #950000}
