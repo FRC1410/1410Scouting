@@ -15,7 +15,7 @@
     background-color: #2b64ba;
     border: none;
     color: white;
-    width: 99%;
+    width: 98.5%;
     padding: 50px 80px;
     margin-bottom: 5px;
     text-align: center;
@@ -29,6 +29,14 @@
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
+}
+
+.tab img {
+    margin-top: 3px;
+    margin-left: 75%;
+    width: 40px;
+    height: 40px;
+    position: relative;
 }
 
 /* Style the buttons inside the tab */
@@ -74,9 +82,10 @@
 .BAD:active {background-color: #950000}
 
 .input {
-    margin: 2px;
-    height: 110px;
-    width: 49%;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    height: 100px;
+    width: 48%;
     font-size: 16px;
     background-color: white;
 }
