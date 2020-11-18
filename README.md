@@ -1,46 +1,14 @@
-# QRCode.js
-QRCode.js is javascript library for making QRCode. QRCode.js supports Cross-browser with HTML5 Canvas and table tag in DOM.
-QRCode.js has no dependencies.
+# 1410Scouting
+The Official 1410 Scouting App
 
-## Basic Usages
-```
-<div id="qrcode"></div>
-<script type="text/javascript">
-new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie");
-</script>
-```
+ This is a custom website that is being designed for FRC and FTC match scouting, mainly to collect and process data from devices and send it to a server for data analysis.
+This website is advantageous and more customizable than the previous method of collecting data, which was a Google Form. It was designed primarily for ease of use.
 
-or with some options
+This would mostly be used at competitions, but can theoretically be used anytime. 
+FRC Team 1410 is developing this app, but this app will likely be used by a few FTC teams.
 
-```
-<div id="qrcode"></div>
-<script type="text/javascript">
-var qrcode = new QRCode(document.getElementById("qrcode"), {
-	text: "http://jindo.dev.naver.com/collie",
-	width: 128,
-	height: 128,
-	colorDark : "#000000",
-	colorLight : "#ffffff",
-	correctLevel : QRCode.CorrectLevel.H
-});
-</script>
-```
+The website can be accessed at https://1410Scouting.xyz, but it has no real functionality at the moment without access to the server.
 
-and you can use some methods
+More detailed README coming soon!
 
-```
-qrcode.clear(); // clear the code.
-qrcode.makeCode("http://naver.com"); // make another code.
-```
-
-## Browser Compatibility
-IE6~10, Chrome, Firefox, Safari, Opera, Mobile Safari, Android, Windows Mobile, ETC.
-
-## License
-MIT License
-
-## Contact
-twitter @davidshimjs
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/davidshimjs/qrcodejs/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+Credits: Santiago Fiz, Rowan Eklund, Cosimo Plumb, and Fyodor Ionikh
