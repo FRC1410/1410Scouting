@@ -64,6 +64,18 @@ PMABtn = document.getElementById("PMA");
 PMABtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMABtn.innerText = PMA.toString();}
 PMIBtn = document.getElementById("PMI");
 PMIBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMIBtn.innerText = PMI.toString();}
+PMA2Btn = document.getElementById("PMA2");
+PMA2Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMA2Btn.innerText = PMA.toString();}
+PMI2Btn = document.getElementById("PMI2");
+PMI2Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI2Btn.innerText = PMI.toString();}
+PMA3Btn = document.getElementById("PMA3");
+PMA3Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMA3Btn.innerText = PMA.toString();}
+PMI3Btn = document.getElementById("PMI3");
+PMI3Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI3Btn.innerText = PMI.toString();}
+PMA4Btn = document.getElementById("PMA4");
+PMA4Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMA4Btn.innerText = PMA.toString();}
+PMI4Btn = document.getElementById("PMI4");
+PMI4Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI4Btn.innerText = PMI.toString();}
 
 let rqst = new XMLHttpRequest();
 let url = "http://localhost:3000";
