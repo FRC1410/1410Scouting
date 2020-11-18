@@ -17,11 +17,11 @@ function openTab(evt, tabName) {
 }
 
 ELGSBtn = document.getElementById("ELGS");
-ELGSBtn.onmousedown = function () {
-    if (Event.button === 1) {
-        ELGM++;
-    } else {
+ELGSBtn.onmouseup = function () {
+    if (Event.button === 2) {
         ELGM--;
+    } else {
+        ELGM++;
     }
     ELGSBtn.innerText = ELGM.toString();}
 

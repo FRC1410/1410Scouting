@@ -1,26 +1,25 @@
 .proletariat {
     background-color: #4CAF50;
     border: none;
+    width: 49%;
     color: white;
     padding: 50px 80px;
     margin-bottom: 5px;
     text-align: center;
     font-size: 16px;
-    justify-content: center;
-    align-items: center;
 }
 .proletariat:active {background-color: #3e8e41}
 
 .BIGDATA {
+    margin-top: 5px;
     background-color: #2b64ba;
     border: none;
     color: white;
+    width: 99%;
     padding: 50px 80px;
     margin-bottom: 5px;
     text-align: center;
     font-size: 16px;
-    justify-content: center;
-    align-items: center;
 }
 
 .BIGDATA:active {background-color: #173965
@@ -65,6 +64,7 @@
 .BAD {
     background-color: #ff0000;
     border: none;
+    width: 49%;
     color: white;
     padding: 50px 80px;
     margin-bottom: 5px;
@@ -74,7 +74,8 @@
 .BAD:active {background-color: #950000}
 
 .input {
+    margin: 2.5px;
     height: 110px;
-    width: 220px;
+    width: 49%;
     font-size: 16px;
 }
