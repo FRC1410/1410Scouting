@@ -2,6 +2,8 @@
 // let qrcode = new QRCode(output, "bruh");
 let AHGS = 0, AHGM = 0, ALGS = 0, ALGM = 0, AMGS = 0, AMGM = 0, TLGM = 0, TLGS = 0, TMGM = 0, TMGS = 0, THGM = 0, THGS = 0, ELGM = 0, ELGS = 0, EMGM = 0, EMGS = 0, EHGM = 0, EHGS = 0, APS = 0, EPS = 0, PMA = 0, PMI = 0;
 
+
+
 function openTab(evt, tabName) {
     let i, tabContent, tabLinks;
     tabContent = document.getElementsByClassName("tabContent");
@@ -13,62 +15,55 @@ function openTab(evt, tabName) {
         tabLinks[i].className = tabLinks[i].className.replace(" active", "");
     }
     document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
+   // evt.currentTarget.className += " active";
 }
 
-ELGSBtn = document.getElementById("ELGS");
-ELGSBtn.onmouseup = function () {
-    if (Event.button === 2) {
-        ELGM--;
-    } else {
-        ELGM++;
-    }
-    ELGSBtn.innerText = ELGM.toString();}
-
 ELGMBtn = document.getElementById("ELGM");
-ELGMBtn.onclick = function () {ELGS++;ELGMBtn.innerText = ELGS.toString();}
+ELGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {ELGM--;} else {ELGM++;}ELGMBtn.innerText = ELGM.toString();}
+ELGSBtn = document.getElementById("ELGS");
+ELGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {ELGS--;} else {ELGS++;}ELGSBtn.innerText = ELGS.toString();}
 EMGSBtn = document.getElementById("EMGS");
-EMGSBtn.onclick = function () {EMGS++;EMGSBtn.innerText = EMGS.toString();}
+EMGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EMGS--;} else {EMGS++;}EMGSBtn.innerText = EMGS.toString();}
 EMGMBtn = document.getElementById("EMGM");
-EMGMBtn.onclick = function () {EMGM++;EMGMBtn.innerText = EMGM.toString();}
+EMGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EMGM--;} else {EMGM++;}EMGMBtn.innerText = EMGM.toString();}
 EHGSBtn = document.getElementById("EHGS");
-EHGSBtn.onclick = function () {EHGS++;EHGSBtn.innerText = EHGS.toString();}
+EHGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EHGS--;} else {EHGS++;}EHGSBtn.innerText = EHGS.toString();}
 EHGMBtn = document.getElementById("EHGM");
-EHGMBtn.onclick = function () {EHGM++;EHGMBtn.innerText = EHGM.toString();}
+EHGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EHGM--;} else {EHGM++;}EHGMBtn.innerText = EHGM.toString();}
 TLGSBtn = document.getElementById("TLGS");
-TLGSBtn.onclick = function () {TLGM++;TLGSBtn.innerText = TLGM.toString();}
+TLGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {TLGS--;} else {TLGS++;}TLGSBtn.innerText = TLGS.toString();}
 TLGMBtn = document.getElementById("TLGM");
-TLGMBtn.onclick = function () {TLGS++;TLGMBtn.innerText = TLGS.toString();}
+TLGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {TLGM--;} else {TLGM++;}TLGMBtn.innerText = TLGM.toString();}
 TMGSBtn = document.getElementById("TMGS");
-TMGSBtn.onclick = function () {TMGS++;TMGSBtn.innerText = TMGS.toString();}
+TMGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {TMGS--;} else {TMGS++;}TMGSBtn.innerText = TMGS.toString();}
 TMGMBtn = document.getElementById("TMGM");
-TMGMBtn.onclick = function () {TMGM++;TMGMBtn.innerText = TMGM.toString();}
+TMGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {TMGM--;} else {TMGM++;}TMGMBtn.innerText = TMGM.toString();}
 THGSBtn = document.getElementById("THGS");
-THGSBtn.onclick = function () {THGS++;THGSBtn.innerText = THGS.toString();}
+THGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {THGS--;} else {THGS++;}THGSBtn.innerText = THGS.toString();}
 THGMBtn = document.getElementById("THGM");
-THGMBtn.onclick = function () {THGM++;THGMBtn.innerText = THGM.toString();}
+THGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {THGM--;} else {THGM++;}THGMBtn.innerText = THGM.toString();}
 ALGSBtn = document.getElementById("ALGS");
-ALGSBtn.onclick = function () {ALGM++;ALGSBtn.innerText = ALGM.toString();}
+ALGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {ALGS--;} else {ALGS++;}ALGSBtn.innerText = ALGS.toString();}
 ALGMBtn = document.getElementById("ALGM");
-ALGMBtn.onclick = function () {ALGS++;ALGMBtn.innerText = ALGS.toString();}
+ALGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {ALGM--;} else {ALGM++;}ALGMBtn.innerText = ALGM.toString();}
 AMGSBtn = document.getElementById("AMGS");
-AMGSBtn.onclick = function () {AMGS++;AMGSBtn.innerText = AMGS.toString();}
+AMGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {AMGS--;} else {AMGS++;}AMGSBtn.innerText = AMGS.toString();}
 AMGMBtn = document.getElementById("AMGM");
-AMGMBtn.onclick = function () {AMGM++;AMGMBtn.innerText = AMGM.toString();}
+AMGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {AMGM--;} else {AMGM++;}AMGMBtn.innerText = AMGM.toString();}
 AHGSBtn = document.getElementById("AHGS");
-AHGSBtn.onclick = function () {AHGS++;AHGSBtn.innerText = AHGS.toString();}
+AHGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {AHGS--;} else {AHGS++;}AHGSBtn.innerText = AHGS.toString();}
 AHGMBtn = document.getElementById("AHGM");
-AHGMBtn.onclick = function () {AHGM++;AHGMBtn.innerText = AHGM.toString();}
+AHGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {AHGM--;} else {AHGM++;}AHGMBtn.innerText = AHGM.toString();}
 
 APSBtn = document.getElementById("APS");
-APSBtn.onclick = function () {APS++;APSBtn.innerText = APS.toString();}
+APSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {APS--;} else {APS++;}APSBtn.innerText = APS.toString();}
 EPSBtn = document.getElementById("EPS");
-EPSBtn.onclick = function () {EPS++;EPSBtn.innerText = EPS.toString();}
+EPSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EPS--;} else {EPS++;}EPSBtn.innerText = EPS.toString();}
 
 PMABtn = document.getElementById("PMA");
-PMABtn.onclick = function () {PMA++;PMABtn.innerText = PMA.toString();}
+PMABtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMABtn.innerText = PMA.toString();}
 PMIBtn = document.getElementById("PMI");
-PMIBtn.onclick = function () {PMI++;PMIBtn.innerText = PMI.toString();}
+PMIBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMIBtn.innerText = PMI.toString();}
 
 let rqst = new XMLHttpRequest();
 let url = "http://localhost:3000";
