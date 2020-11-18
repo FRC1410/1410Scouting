@@ -19,63 +19,63 @@ function openTab(evt, tabName) {
 }
 
 ELGMBtn = document.getElementById("ELGM");
-ELGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {ELGM--;} else {ELGM++;}ELGMBtn.innerText = ELGM.toString();}
+ELGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {ELGM--;} else {ELGM++;}ELGMBtn.innerText = 'Low Goal Miss: ' + ELGM.toString();}
 ELGSBtn = document.getElementById("ELGS");
-ELGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {ELGS--;} else {ELGS++;}ELGSBtn.innerText = ELGS.toString();}
+ELGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {ELGS--;} else {ELGS++;}ELGSBtn.innerText = 'Low Goal Score: ' + ELGS.toString();}
 EMGSBtn = document.getElementById("EMGS");
-EMGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EMGS--;} else {EMGS++;}EMGSBtn.innerText = EMGS.toString();}
+EMGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EMGS--;} else {EMGS++;}EMGSBtn.innerText = 'Mid Goal Score: ' + EMGS.toString();}
 EMGMBtn = document.getElementById("EMGM");
-EMGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EMGM--;} else {EMGM++;}EMGMBtn.innerText = EMGM.toString();}
+EMGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EMGM--;} else {EMGM++;}EMGMBtn.innerText = 'Mid Goal Miss: ' + EMGM.toString();}
 EHGSBtn = document.getElementById("EHGS");
-EHGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EHGS--;} else {EHGS++;}EHGSBtn.innerText = EHGS.toString();}
+EHGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EHGS--;} else {EHGS++;}EHGSBtn.innerText = 'High Goal Score: ' + EHGS.toString();}
 EHGMBtn = document.getElementById("EHGM");
-EHGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EHGM--;} else {EHGM++;}EHGMBtn.innerText = EHGM.toString();}
+EHGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EHGM--;} else {EHGM++;}EHGMBtn.innerText = 'High Goal Miss: ' + EHGM.toString();}
 TLGSBtn = document.getElementById("TLGS");
-TLGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {TLGS--;} else {TLGS++;}TLGSBtn.innerText = TLGS.toString();}
+TLGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {TLGS--;} else {TLGS++;}TLGSBtn.innerText = 'Low Goal Score: ' + TLGS.toString();}
 TLGMBtn = document.getElementById("TLGM");
-TLGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {TLGM--;} else {TLGM++;}TLGMBtn.innerText = TLGM.toString();}
+TLGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {TLGM--;} else {TLGM++;}TLGMBtn.innerText = 'Low Goal Miss: ' + TLGM.toString();}
 TMGSBtn = document.getElementById("TMGS");
-TMGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {TMGS--;} else {TMGS++;}TMGSBtn.innerText = TMGS.toString();}
+TMGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {TMGS--;} else {TMGS++;}TMGSBtn.innerText = 'Mid Goal Score: ' + TMGS.toString();}
 TMGMBtn = document.getElementById("TMGM");
-TMGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {TMGM--;} else {TMGM++;}TMGMBtn.innerText = TMGM.toString();}
+TMGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {TMGM--;} else {TMGM++;}TMGMBtn.innerText = 'Mid Goal Miss: ' + TMGM.toString();}
 THGSBtn = document.getElementById("THGS");
-THGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {THGS--;} else {THGS++;}THGSBtn.innerText = THGS.toString();}
+THGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {THGS--;} else {THGS++;}THGSBtn.innerText = 'High Goal Score: ' + THGS.toString();}
 THGMBtn = document.getElementById("THGM");
-THGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {THGM--;} else {THGM++;}THGMBtn.innerText = THGM.toString();}
+THGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {THGM--;} else {THGM++;}THGMBtn.innerText = 'High Goal Miss: ' + THGM.toString();}
 ALGSBtn = document.getElementById("ALGS");
-ALGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {ALGS--;} else {ALGS++;}ALGSBtn.innerText = ALGS.toString();}
+ALGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {ALGS--;} else {ALGS++;}ALGSBtn.innerText = 'Low Goal Score: ' + ALGS.toString();}
 ALGMBtn = document.getElementById("ALGM");
-ALGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {ALGM--;} else {ALGM++;}ALGMBtn.innerText = ALGM.toString();}
+ALGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {ALGM--;} else {ALGM++;}ALGMBtn.innerText = 'Low Goal Miss: ' + ALGM.toString();}
 AMGSBtn = document.getElementById("AMGS");
-AMGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {AMGS--;} else {AMGS++;}AMGSBtn.innerText = AMGS.toString();}
+AMGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {AMGS--;} else {AMGS++;}AMGSBtn.innerText = 'Mid Goal Score: ' + AMGS.toString();}
 AMGMBtn = document.getElementById("AMGM");
-AMGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {AMGM--;} else {AMGM++;}AMGMBtn.innerText = AMGM.toString();}
+AMGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {AMGM--;} else {AMGM++;}AMGMBtn.innerText = 'Mid Goal Miss: ' + AMGM.toString();}
 AHGSBtn = document.getElementById("AHGS");
-AHGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {AHGS--;} else {AHGS++;}AHGSBtn.innerText = AHGS.toString();}
+AHGSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {AHGS--;} else {AHGS++;}AHGSBtn.innerText = 'High Goal Score: ' + AHGS.toString();}
 AHGMBtn = document.getElementById("AHGM");
-AHGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {AHGM--;} else {AHGM++;}AHGMBtn.innerText = AHGM.toString();}
+AHGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {AHGM--;} else {AHGM++;}AHGMBtn.innerText = 'High Goal Miss: ' + AHGM.toString();}
 
 APSBtn = document.getElementById("APS");
-APSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {APS--;} else {APS++;}APSBtn.innerText = APS.toString();}
+APSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {APS--;} else {APS++;}APSBtn.innerText = 'Power Shot: ' + APS.toString();}
 EPSBtn = document.getElementById("EPS");
-EPSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EPS--;} else {EPS++;}EPSBtn.innerText = EPS.toString();}
+EPSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EPS--;} else {EPS++;}EPSBtn.innerText = 'Power Shot: ' + EPS.toString();}
 
 PMABtn = document.getElementById("PMA");
-PMABtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMABtn.innerText = PMA.toString();}
+PMABtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMABtn.innerText = 'Major Penalty: ' + PMA.toString();}
 PMIBtn = document.getElementById("PMI");
-PMIBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMIBtn.innerText = PMI.toString();}
+PMIBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMIBtn.innerText = 'Minor Penalty: ' + PMI.toString();}
 PMA2Btn = document.getElementById("PMA2");
-PMA2Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMA2Btn.innerText = PMA.toString();}
+PMA2Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMA2Btn.innerText = 'Major Penalty: ' + PMA.toString();}
 PMI2Btn = document.getElementById("PMI2");
-PMI2Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI2Btn.innerText = PMI.toString();}
+PMI2Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI2Btn.innerText = 'Minor Penalty: ' + PMI.toString();}
 PMA3Btn = document.getElementById("PMA3");
-PMA3Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMA3Btn.innerText = PMA.toString();}
+PMA3Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMA3Btn.innerText = 'Major Penalty: ' + PMA.toString();}
 PMI3Btn = document.getElementById("PMI3");
-PMI3Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI3Btn.innerText = PMI.toString();}
+PMI3Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI3Btn.innerText = 'Minor Penalty: ' + PMI.toString();}
 PMA4Btn = document.getElementById("PMA4");
-PMA4Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMA4Btn.innerText = PMA.toString();}
+PMA4Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMA4Btn.innerText = 'Major Penalty: ' + PMA.toString();}
 PMI4Btn = document.getElementById("PMI4");
-PMI4Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI4Btn.innerText = PMI.toString();}
+PMI4Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI4Btn.innerText = 'Minor Penalty: ' + PMI.toString();}
 
 let rqst = new XMLHttpRequest();
 let url = "http://localhost:3000";
