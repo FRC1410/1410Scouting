@@ -6,6 +6,8 @@
     margin-bottom: 5px;
     text-align: center;
     font-size: 16px;
+    justify-content: center;
+    align-items: center;
 }
 .proletariat:active {background-color: #3e8e41}
 
@@ -17,6 +19,8 @@
     margin-bottom: 5px;
     text-align: center;
     font-size: 16px;
+    justify-content: center;
+    align-items: center;
 }
 
 .BIGDATA:active {background-color: #173965
@@ -68,3 +72,9 @@
     font-size: 16px;
 }
 .BAD:active {background-color: #950000}
+
+.input {
+    height: 110px;
+    width: 220px;
+    font-size: 16px;
+}
