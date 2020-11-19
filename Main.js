@@ -5,17 +5,17 @@ let AHGS = 0, AHGM = 0, ALGS = 0, ALGM = 0, AMGS = 0, AMGM = 0, TLGM = 0, TLGS =
 
 
 function openTab(evt, tabName) {
-    let i, tabContent, tabLinks;
+    let i, tabContent, tabLink;
     tabContent = document.getElementsByClassName("tabContent");
     for (i = 0; i < tabContent.length; i++) {
         tabContent[i].style.display = "none";
     }
-    tabLinks = document.getElementsByClassName("tabLinks");
-    for (i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+    tabLink = document.getElementsByClassName("tabLinks");
+    for (i = 0; i < tabLink.length; i++) {
+        tabLink[i].className = tabLink[i].className.replace(" active", "");
     }
     document.getElementById(tabName).style.display = "block";
-   // evt.currentTarget.className += " active";
+    evt.currentTarget.className += "active";
 }
 
 ELGMBtn = document.getElementById("ELGM");
@@ -79,7 +79,7 @@ PMI4Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 
 
 let rqst = new XMLHttpRequest();
 //let url = "http://localhost:3000";
-let url = "https://cb28f30b163c.ngrok.io";
+let url = "https://7824a64491f4.ngrok.io";
 let type = "POST"
 let SendBtn = document.getElementById("send");
 
