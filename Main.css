@@ -1,13 +1,17 @@
+.body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #0C0503
+}
 .proletariat {
     background-color: #4CAF50;
     border: none;
-    width: 49%;
+    width: 49.39%;
     color: white;
     padding: 50px 80px;
-    margin-bottom: 5px;
     text-align: center;
     font-size: 16px;
-    display: inline-block;
+    margin-top: 5px;
 }
 
 .proletariat:hover {
@@ -21,12 +25,11 @@
     background-color: #2b64ba;
     border: none;
     color: white;
-    width: 98.5%;
+    width: 99%;
     padding: 50px 80px;
     margin-bottom: 5px;
     text-align: center;
     font-size: 16px;
-    display: inline-block;
 }
 
 .BIGDATA:hover {
@@ -58,7 +61,7 @@
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    transition: 0.3s;
+    transition: 0s;
     font-size: 17px;
 }
 
@@ -75,18 +78,19 @@
 /* Style the tab content */
 .tabContent {
     display: none;
-    padding: 6px 12px;
+  /*  padding: 6px 12px; */
     border: none;
+    justify-content: space-evenly;
 
 }
 
 .BAD {
     background-color: crimson;
     border: none;
-    width: 49%;
+    width: 49.39%;
     color: white;
     padding: 50px 80px;
-    margin-bottom: 5px;
+    margin-top: 5px;
     text-align: center;
     font-size: 16px;
     display: inline-block;
@@ -102,7 +106,7 @@
     margin-bottom: 2px;
     margin-top: 2px;
     height: 100px;
-    width: 48%;
+    width: 49%;
     font-size: 16px;
     background-color: white;
     display: inline-block;
