@@ -12,6 +12,7 @@
     text-align: center;
     font-size: 16px;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 .proletariat:hover {
@@ -30,6 +31,7 @@
     margin-bottom: 5px;
     text-align: center;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .BIGDATA:hover {
@@ -38,6 +40,8 @@
 
 .BIGDATA:active {background-color: #173965
 }
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal*/
 
 .tab {
     overflow: hidden;
@@ -94,6 +98,7 @@
     text-align: center;
     font-size: 16px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .BAD:hover {
