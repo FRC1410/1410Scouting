@@ -7,7 +7,13 @@
     margin-bottom: 5px;
     text-align: center;
     font-size: 16px;
+    display: inline-block;
 }
+
+.proletariat:hover {
+    background-color: limegreen;
+}
+
 .proletariat:active {background-color: #3e8e41}
 
 .BIGDATA {
@@ -20,6 +26,11 @@
     margin-bottom: 5px;
     text-align: center;
     font-size: 16px;
+    display: inline-block;
+}
+
+.BIGDATA:hover {
+    background-color: cornflowerblue;
 }
 
 .BIGDATA:active {background-color: #173965
@@ -70,7 +81,7 @@
 }
 
 .BAD {
-    background-color: #ff0000;
+    background-color: crimson;
     border: none;
     width: 49%;
     color: white;
@@ -78,7 +89,13 @@
     margin-bottom: 5px;
     text-align: center;
     font-size: 16px;
+    display: inline-block;
 }
+
+.BAD:hover {
+    background-color: red;
+}
+
 .BAD:active {background-color: #950000}
 
 .input {
@@ -88,4 +105,5 @@
     width: 48%;
     font-size: 16px;
     background-color: white;
+    display: inline-block;
 }
