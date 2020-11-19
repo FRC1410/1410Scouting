@@ -78,7 +78,8 @@ PMI4Btn = document.getElementById("PMI4");
 PMI4Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI4Btn.innerText = 'Minor Penalty: ' + PMI.toString();}
 
 let rqst = new XMLHttpRequest();
-let url = "http://localhost:3000";
+//let url = "http://localhost:3000";
+let url = " https://53a8ee4cf22b.ngrok.io";
 let type = "POST"
 let SendBtn = document.getElementById("send");
 
