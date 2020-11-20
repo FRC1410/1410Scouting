@@ -18,9 +18,9 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += "active";
 }
 
-function popupFunction() {
-    const popUp = document.getElementById("dataPopup");
-    popUp.classList.toggle("show");
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
 }
 
 ELGMBtn = document.getElementById("ELGM");
