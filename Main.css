@@ -10,13 +10,14 @@
     background-color: #555;
     color: #fff;
     text-align: center;
+    font-size: 100px;
     border-radius: 6px;
-    padding: 8px 0;
+    padding: 20px 0;
     /*position: absolute;*/
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: -975px;
+    margin-left: -1500px;
 }
 
 /* Popup arrow */
