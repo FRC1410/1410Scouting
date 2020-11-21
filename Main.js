@@ -19,8 +19,9 @@ function openTab(evt, tabName) {
 }
 
 function myFunction() {
-    var popup = document.getElementById("myPopup");
+    const popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
+    setTimeout(function () {popup.classList.toggle("hide")}, 2000);
 }
 
 ELGMBtn = document.getElementById("ELGM");
