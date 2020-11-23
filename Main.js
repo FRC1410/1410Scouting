@@ -84,44 +84,6 @@ let type = "POST"
 let SendBtn = document.getElementById("send");
 
 SendBtn.onclick = function () {
-    fs.appendFile("data.txt", JSON.stringify({
-        Scout_Number: document.getElementById("SN").value.toString(),
-        Team_Number: document.getElementById("TN").value.toString(),
-        Auto_Low_Goal_Scored: ALGS.toString(),
-        Auto_Low_Goal_Missed: ALGM.toString(),
-        Auto_Mid_Goal_Scored: AMGS.toString(),
-        Auto_Mid_Goal_Missed: AMGM.toString(),
-        Auto_High_Goal_Scored: AHGS.toString(),
-        Auto_High_Goal_Missed: AHGM.toString(),
-        Auto_Power_Shot_Target: APS.toString(),
-        Auto_Wobble_Correct_Zone: document.getElementById("AWCZ").value.toString(),
-
-        Teleop_Low_Goal_Scored: TLGS.toString(),
-        Teleop_Low_Goal_Missed: TLGM.toString(),
-        Teleop_Mid_Goal_Scored: TMGS.toString(),
-        Teleop_Mid_Goal_Missed: TMGM.toString(),
-        Teleop_High_Goal_Scored: THGS.toString(),
-        Teleop_High_Goal_Missed: THGM.toString(),
-
-        Endgame_Low_Goal_Scored: ELGS.toString(),
-        Endgame_Low_Goal_Missed: ELGM.toString(),
-        Endgame_Mid_Goal_Scored: EMGS.toString(),
-        Endgame_Mid_Goal_Missed: EMGM.toString(),
-        Endgame_High_Goal_Scored: EHGS.toString(),
-        Endgame_High_Goal_Missed: EHGM.toString(),
-        Endgame_Power_Shot_Target: EPS.toString(),
-        Endgame_Wobble_Start_Line: document.getElementById("EWSL").value.toString(),
-        Endgame_Wobble_Drop_Zone: document.getElementById("EWDZ").value.toString(),
-        Endgame_Wobble_Rings : document.getElementById("EWR").value.toString(),
-
-        Penalty_Major: PMA.toString(),
-        Penalty_Minor: PMI.toString(),
-    }), function (err) {
-        if (err) {
-            return console.error(err);
-        }
-        console.log("Success");
-    });
     rqst.open(type, url, true);
     rqst.setRequestHeader("Content-Type", "application/json");
     rqst.send(JSON.stringify({
