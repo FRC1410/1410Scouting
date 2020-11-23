@@ -1,6 +1,5 @@
 // let output = document.getElementById("qrcode");
 // let qrcode = new QRCode(output, "bruh");
-const fs = require("fs");
 
 let url = "https://bb152a0935f2.ngrok.io";
 let AHGS = 0, AHGM = 0, ALGS = 0, ALGM = 0, AMGS = 0, AMGM = 0, TLGM = 0, TLGS = 0, TMGM = 0, TMGS = 0, THGM = 0, THGS = 0, ELGM = 0, ELGS = 0, EMGM = 0, EMGS = 0, EHGM = 0, EHGS = 0, APS = 0, EPS = 0, PMA = 0, PMI = 0;
