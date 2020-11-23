@@ -18,12 +18,6 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += "active";
 }
 
-function myFunction() {
-    const popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-    setTimeout(function () {popup.classList.toggle("hide")}, 2000);
-}
-
 ELGMBtn = document.getElementById("ELGM");
 ELGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {ELGM--;} else {ELGM++;}ELGMBtn.innerText = 'Low Goal Miss: ' + ELGM.toString();}
 ELGSBtn = document.getElementById("ELGS");
