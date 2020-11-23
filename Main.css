@@ -35,10 +35,11 @@
 }
 
 .bod {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background-color: #0C0503
 }
+
 .proletariat {
     background-color: #4CAF50;
     border: none;
@@ -56,6 +57,60 @@
 }
 
 .proletariat:active {background-color: #3e8e41}
+
+.proletariat-high {
+    background-color: #4CAF50;
+    border: none;
+    width: 49.39%;
+    color: white;
+    padding: 50px 80px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.proletariat-high:hover {
+    background-color: limegreen;
+}
+
+.proletariat-high:active {background-color: #3e8e41}
+
+.proletariat-mid {
+    background-color: #4CAF50;
+    border: none;
+    width: 49.39%;
+    color: white;
+    padding: 50px 80px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.proletariat-mid:hover {
+    background-color: limegreen;
+}
+
+.proletariat-mid:active {background-color: #3e8e41}
+
+.proletariat-low {
+    background-color: #4CAF50;
+    border: none;
+    width: 49.39%;
+    color: white;
+    padding: 50px 80px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.proletariat-low:hover {
+    background-color: limegreen;
+}
+
+.proletariat-low:active {background-color: #3e8e41}
 
 .BIGDATA {
     margin-top: 5px;
@@ -145,7 +200,7 @@
 .input {
     margin-bottom: 2px;
     margin-top: 2px;
-    height: 100px;
+    height: 115px;
     width: 49%;
     font-size: 16px;
     background-color: white;
@@ -154,6 +209,5 @@
 
 .credits {
     color: darkgrey;
-    margin-left: 29%;
     font-size: 17px;
 }

@@ -8,57 +8,60 @@
     </head>
     <body class = "bod">
         <div class="tab">
+            <button class="tabLinks" onclick="openTab(Event, 'PreGame')">Pre-Game</button>
             <button class="tabLinks" onclick="openTab(Event, 'Auto')">Auto</button>
             <button class="tabLinks" onclick="openTab(Event, 'Tele-op')">Tele-op</button>
             <button class="tabLinks" onclick="openTab(Event, 'Endgame')">Endgame</button>
-            <button class="tabLinks" onclick="openTab(Event, 'PreGame')">Pre/Post Game</button>
-            <img src = "favicon.png" alt = "Krak">
+            <a href = "http://frc1410.org"><img src = "favicon.png" alt = "Krak"></a>
         </div>
 
-        <div id="Auto" class="tabContent">
-            <button type="button" class="proletariat" id="AHGS">High Goal Score</button>
-            <button type="button" class="proletariat" id="AHGM">High Goal Miss</button>
-            <button type="button" class="proletariat" id="AMGS">Mid Goal Score</button>
-            <button type="button" class="proletariat" id="AMGM">Mid Goal Miss</button>
-            <button type="button" class="proletariat" id="ALGS">Low Goal Score</button>
-            <button type="button" class="proletariat" id="ALGM">Low Goal Miss</button>
-
-            <button type="button" class="proletariat" id="APS">Power Shot</button>
-
-            <button type="button" class="BAD" id="PMA">Major Penalty</button>
-            <button type="button" class="BAD" id="PMI">Minor Penalty</button>
-        </div>
-        <div id="Tele-op" class="tabContent">
-            <button type="button" class="proletariat" id="THGS">High Goal Score</button>
-            <button type="button" class="proletariat" id="THGM">High Goal Miss</button>
-            <button type="button" class="proletariat" id="TMGS">Mid Goal Score</button>
-            <button type="button" class="proletariat" id="TMGM">Mid Goal Miss</button>
-            <button type="button" class="proletariat" id="TLGS">Low Goal Score</button>
-            <button type="button" class="proletariat" id="TLGM">Low Goal Miss</button>
-            <button type="button" class="BAD" id="PMA2">Major Penalty</button>
-            <button type="button" class="BAD" id="PMI2">Minor Penalty</button>
-
-        </div>
-        <div id="Endgame" class="tabContent">
-            <button type="button" class="proletariat" id="EHGS">High Goal Score</button>
-            <button type="button" class="proletariat" id="EHGM">High Goal Miss</button>
-            <button type="button" class="proletariat" id="EMGS">Mid Goal Score</button>
-            <button type="button" class="proletariat" id="EMGM">Mid Goal Miss</button>
-            <button type="button" class="proletariat" id="ELGS">Low Goal Score</button>
-            <button type="button" class="proletariat" id="ELGM">Low Goal Miss</button>
-
-            <button type="button" class="proletariat" id="EPS">Power Shot</button>
-
-            <button type="button" class="BAD" id="PMA3">Major Penalty</button>
-            <button type="button" class="BAD" id="PMI3">Minor Penalty</button>
-        </div>
         <div id="PreGame" class="tabContent">
             <input type="text" id="TN" class="input" placeholder="Team #">
             <input type="text" id="SN" class="input" placeholder="Scout's First Name">
+<!--            <button type="button" class="BAD" id="PMA4">Major Penalty</button>-->
+<!--            <button type="button" class="BAD" id="PMI4">Minor Penalty</button>-->
+        </div>
+
+        <div id="Auto" class="tabContent">
+            <button type="button" class="proletariat-high" id="AHGS">High Goal Score</button>
+            <button type="button" class="proletariat-high" id="AHGM">High Goal Miss</button>
+            <button type="button" class="proletariat-mid" id="AMGS">Mid Goal Score</button>
+            <button type="button" class="proletariat-mid" id="AMGM">Mid Goal Miss</button>
+            <button type="button" class="proletariat-low" id="ALGS">Low Goal Score</button>
+            <button type="button" class="proletariat-low" id="ALGM">Low Goal Miss</button>
+            <button type="button" class="proletariat" id="APS">Power Shot</button>
+
             <input type="text" id="AWCZ" class="input" placeholder="Auto Wobble Correct Zone">
+
+<!--            <button type="button" class="BAD" id="PMA">Major Penalty</button>-->
+<!--            <button type="button" class="BAD" id="PMI">Minor Penalty</button>-->
+        </div>
+        <div id="Tele-op" class="tabContent">
+            <button type="button" class="proletariat-high" id="THGS">High Goal Score</button>
+            <button type="button" class="proletariat-high" id="THGM">High Goal Miss</button>
+            <button type="button" class="proletariat-mid" id="TMGS">Mid Goal Score</button>
+            <button type="button" class="proletariat-mid" id="TMGM">Mid Goal Miss</button>
+            <button type="button" class="proletariat-low" id="TLGS">Low Goal Score</button>
+            <button type="button" class="proletariat-low" id="TLGM">Low Goal Miss</button>
+<!--            <button type="button" class="BAD" id="PMA2">Major Penalty</button>-->
+<!--            <button type="button" class="BAD" id="PMI2">Minor Penalty</button>-->
+        </div>
+        <div id="Endgame" class="tabContent">
+            <button type="button" class="proletariat-high" id="EHGS">High Goal Score</button>
+            <button type="button" class="proletariat-high" id="EHGM">High Goal Miss</button>
+            <button type="button" class="proletariat-mid" id="EMGS">Mid Goal Score</button>
+            <button type="button" class="proletariat-mid" id="EMGM">Mid Goal Miss</button>
+            <button type="button" class="proletariat-low" id="ELGS">Low Goal Score</button>
+            <button type="button" class="proletariat-low" id="ELGM">Low Goal Miss</button>
+            <button type="button" class="proletariat" id="EPS">Power Shot</button>
+
             <input type="text" id="EWSL" class="input" placeholder="Endgame Wobble Start Line">
             <input type="text" id="EWDZ" class="input" placeholder="Endgame Wobble Drop Zone">
             <input type="text" id="EWR" class="input" placeholder="Endgame Wobble Rings #">
+
+<!--            <button type="button" class="BAD" id="PMA3">Major Penalty</button>-->
+<!--            <button type="button" class="BAD" id="PMI3">Minor Penalty</button>-->
+
             <button type="button" class="BIGDATA" id="send">Send BIG DATA</button>
             <div id = "modal" class = "modal">
                 <div class="modal-content">
@@ -66,11 +69,8 @@
                     <h1>BIG DATA Sent! (Reload Page)</h1>
                 </div>
             </div>
-            <button type="button" class="BAD" id="PMA4">Major Penalty</button>
-            <button type="button" class="BAD" id="PMI4">Minor Penalty</button>
         </div>
-        <p class = "credits">Unofficial © FRC Team 1410 &emsp;&emsp;&emsp;&emsp;&emsp; Created by Rowan Eklund & Santiago Fiz</p>
-        <p class = "credits">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Do not copy or distribute unless you want to.</p>
+        <p class = "credits">Unofficial © FRC Team 1410&emsp;&emsp;&emsp;&emsp;Created by Rowan Eklund & Santiago Fiz with help from Cosimo Plumb and Fyodor Ionikh&emsp;&emsp;&emsp;&emsp;Do not copy or distribute unless you want to.</p>
 <!--        <img src="favicon.png" alt="Kraken"> -->
         <script src="Main.js"></script>
         <script>

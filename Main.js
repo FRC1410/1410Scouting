@@ -1,8 +1,6 @@
 // let output = document.getElementById("qrcode");
 // let qrcode = new QRCode(output, "bruh");
-
 let AHGS = 0, AHGM = 0, ALGS = 0, ALGM = 0, AMGS = 0, AMGM = 0, TLGM = 0, TLGS = 0, TMGM = 0, TMGS = 0, THGM = 0, THGS = 0, ELGM = 0, ELGS = 0, EMGM = 0, EMGS = 0, EHGM = 0, EHGS = 0, APS = 0, EPS = 0, PMA = 0, PMI = 0;
-
 function openTab(evt, tabName) {
     let i, tabContent, tabLink;
     tabContent = document.getElementsByClassName("tabContent");
@@ -15,6 +13,38 @@ function openTab(evt, tabName) {
     }
     document.getElementById(tabName).style.display = "block";
    // evt.currentTarget.className += "active";
+}
+
+function resetVar() {
+    AHGS = 0; AHGM = 0; ALGS = 0; ALGM = 0; AMGS = 0; AMGM = 0; TLGM = 0; TLGS = 0; TMGM = 0; TMGS = 0; THGM = 0; THGS = 0; ELGM = 0; ELGS = 0; EMGM = 0; EMGS = 0; EHGM = 0; EHGS = 0; APS = 0; EPS = 0; PMA = 0; PMI = 0;
+    ELGMBtn.innerText = 'Low Goal Miss: ' + ELGM.toString();
+    ELGSBtn.innerText = 'Low Goal Score: ' + ELGS.toString();
+    EMGSBtn.innerText = 'Mid Goal Score: ' + EMGS.toString();
+    EMGMBtn.innerText = 'Mid Goal Miss: ' + EMGM.toString();
+    EHGSBtn.innerText = 'High Goal Score: ' + EHGS.toString();
+    EHGMBtn.innerText = 'High Goal Miss: ' + EHGM.toString();
+    TLGSBtn.innerText = 'Low Goal Score: ' + TLGS.toString();
+    TLGMBtn.innerText = 'Low Goal Miss: ' + TLGM.toString();
+    TMGSBtn.innerText = 'Mid Goal Score: ' + TMGS.toString();
+    TMGMBtn.innerText = 'Mid Goal Miss: ' + TMGM.toString();
+    THGSBtn.innerText = 'High Goal Score: ' + THGS.toString();
+    THGMBtn.innerText = 'High Goal Miss: ' + THGM.toString();
+    ALGSBtn.innerText = 'Low Goal Score: ' + ALGS.toString();
+    ALGMBtn.innerText = 'Low Goal Miss: ' + ALGM.toString();
+    AMGSBtn.innerText = 'Mid Goal Score: ' + AMGS.toString();
+    AMGMBtn.innerText = 'Mid Goal Miss: ' + AMGM.toString();
+    AHGSBtn.innerText = 'High Goal Score: ' + AHGS.toString();
+    AHGMBtn.innerText = 'High Goal Miss: ' + AHGM.toString();
+    APSBtn.innerText = 'Power Shot: ' + APS.toString();
+    EPSBtn.innerText = 'Power Shot: ' + EPS.toString();
+    // PMABtn.innerText = 'Major Penalty: ' + PMA.toString();
+    // PMIBtn.innerText = 'Minor Penalty: ' + PMI.toString();
+    // PMA2Btn.innerText = 'Major Penalty: ' + PMA.toString();
+    // PMI2Btn.innerText = 'Minor Penalty: ' + PMI.toString();
+    // PMA3Btn.innerText = 'Major Penalty: ' + PMA.toString();
+    // PMI3Btn.innerText = 'Minor Penalty: ' + PMI.toString();
+    // PMA4Btn.innerText = 'Major Penalty: ' + PMA.toString();
+    // PMI4Btn.innerText = 'Minor Penalty: ' + PMI.toString();
 }
 
 ELGMBtn = document.getElementById("ELGM");
@@ -59,22 +89,22 @@ APSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4
 EPSBtn = document.getElementById("EPS");
 EPSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EPS--;} else {EPS++;}EPSBtn.innerText = 'Power Shot: ' + EPS.toString();}
 
-PMABtn = document.getElementById("PMA");
-PMABtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMABtn.innerText = 'Major Penalty: ' + PMA.toString();}
-PMIBtn = document.getElementById("PMI");
-PMIBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMIBtn.innerText = 'Minor Penalty: ' + PMI.toString();}
-PMA2Btn = document.getElementById("PMA2");
-PMA2Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMA2Btn.innerText = 'Major Penalty: ' + PMA.toString();}
-PMI2Btn = document.getElementById("PMI2");
-PMI2Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI2Btn.innerText = 'Minor Penalty: ' + PMI.toString();}
-PMA3Btn = document.getElementById("PMA3");
-PMA3Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMA3Btn.innerText = 'Major Penalty: ' + PMA.toString();}
-PMI3Btn = document.getElementById("PMI3");
-PMI3Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI3Btn.innerText = 'Minor Penalty: ' + PMI.toString();}
-PMA4Btn = document.getElementById("PMA4");
-PMA4Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMA4Btn.innerText = 'Major Penalty: ' + PMA.toString();}
-PMI4Btn = document.getElementById("PMI4");
-PMI4Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI4Btn.innerText = 'Minor Penalty: ' + PMI.toString();}
+// PMABtn = document.getElementById("PMA");
+// PMABtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMABtn.innerText = 'Major Penalty: ' + PMA.toString();}
+// PMIBtn = document.getElementById("PMI");
+// PMIBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMIBtn.innerText = 'Minor Penalty: ' + PMI.toString();}
+// PMA2Btn = document.getElementById("PMA2");
+// PMA2Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMA2Btn.innerText = 'Major Penalty: ' + PMA.toString();}
+// PMI2Btn = document.getElementById("PMI2");
+// PMI2Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI2Btn.innerText = 'Minor Penalty: ' + PMI.toString();}
+// PMA3Btn = document.getElementById("PMA3");
+// PMA3Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMA3Btn.innerText = 'Major Penalty: ' + PMA.toString();}
+// PMI3Btn = document.getElementById("PMI3");
+// PMI3Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI3Btn.innerText = 'Minor Penalty: ' + PMI.toString();}
+// PMA4Btn = document.getElementById("PMA4");
+// PMA4Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMA4Btn.innerText = 'Major Penalty: ' + PMA.toString();}
+// PMI4Btn = document.getElementById("PMI4");
+// PMI4Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI4Btn.innerText = 'Minor Penalty: ' + PMI.toString();}
 
 let rqst = new XMLHttpRequest();
 //let url = "http://localhost:3000";
@@ -83,6 +113,8 @@ let type = "POST"
 let SendBtn = document.getElementById("send");
 
 SendBtn.onclick = function () {
+    resetVar();
+
     rqst.open(type, url, true);
     rqst.setRequestHeader("Content-Type", "application/json");
     rqst.send(JSON.stringify({
@@ -115,7 +147,7 @@ SendBtn.onclick = function () {
         Endgame_Wobble_Drop_Zone: document.getElementById("EWDZ").value.toString(),
         Endgame_Wobble_Rings : document.getElementById("EWR").value.toString(),
 
-        Penalty_Major: PMA.toString(),
-        Penalty_Minor: PMI.toString(),
+        // Penalty_Major: PMA.toString(),
+        // Penalty_Minor: PMI.toString(),
     }));
 }
