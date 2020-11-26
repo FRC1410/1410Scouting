@@ -1,6 +1,7 @@
-// let output = document.getElementById("qrcode");
-// let qrcode = new QRCode(output, "bruh");
 let AHGS = 0, AHGM = 0, ALGS = 0, ALGM = 0, AMGS = 0, AMGM = 0, TLGM = 0, TLGS = 0, TMGM = 0, TMGS = 0, THGM = 0, THGS = 0, ELGM = 0, ELGS = 0, EMGM = 0, EMGS = 0, EHGM = 0, EHGS = 0, APS = 0, EPS = 0, PMA = 0, PMI = 0;
+const close = document.getElementsByClassName("close")[0];
+const modal = document.getElementById("modal");
+
 function openTab(evt, tabName) {
     let i, tabContent, tabLink;
     tabContent = document.getElementsByClassName("tabContent");
@@ -113,8 +114,6 @@ let type = "POST"
 let SendBtn = document.getElementById("send");
 
 SendBtn.onclick = function () {
-    resetVar();
-
     rqst.open(type, url, true);
     rqst.setRequestHeader("Content-Type", "application/json");
     rqst.send(JSON.stringify({
@@ -150,4 +149,17 @@ SendBtn.onclick = function () {
         // Penalty_Major: PMA.toString(),
         // Penalty_Minor: PMI.toString(),
     }));
+    resetVar();
+
+    modal.style.display = "block";
+}
+
+close.onclick = function () {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
 }
