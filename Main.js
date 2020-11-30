@@ -109,7 +109,7 @@ EPSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4
 
 let rqst = new XMLHttpRequest();
 //let url = "http://localhost:3000";
-let url = 'https://450e1bdbde8d.ngrok.io';
+let url = 'https://8177bf3d7da2.ngrok.io';
 let type = "POST"
 let SendBtn = document.getElementById("send");
 
