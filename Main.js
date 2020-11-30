@@ -1,4 +1,4 @@
-let AHGS = 0, AHGM = 0, ALGS = 0, ALGM = 0, AMGS = 0, AMGM = 0, TLGM = 0, TLGS = 0, TMGM = 0, TMGS = 0, THGM = 0, THGS = 0, ELGM = 0, ELGS = 0, EMGM = 0, EMGS = 0, EHGM = 0, EHGS = 0, APS = 0, EPS = 0, PMA = 0, PMI = 0;
+let EWDZ = false, EWSL = false, AWCZ = false, AHGS = 0, AHGM = 0, ALGS = 0, ALGM = 0, AMGS = 0, AMGM = 0, TLGM = 0, TLGS = 0, TMGM = 0, TMGS = 0, THGM = 0, THGS = 0, ELGM = 0, ELGS = 0, EMGM = 0, EMGS = 0, EHGM = 0, EHGS = 0, APS = 0, EPS = 0, PMA = 0, PMI = 0;
 const close = document.getElementsByClassName("close")[0];
 const modal = document.getElementById("modal");
 
@@ -17,7 +17,7 @@ function openTab(evt, tabName) {
 }
 
 function resetVar() {
-    AHGS = 0; AHGM = 0; ALGS = 0; ALGM = 0; AMGS = 0; AMGM = 0; TLGM = 0; TLGS = 0; TMGM = 0; TMGS = 0; THGM = 0; THGS = 0; ELGM = 0; ELGS = 0; EMGM = 0; EMGS = 0; EHGM = 0; EHGS = 0; APS = 0; EPS = 0; PMA = 0; PMI = 0;
+    EWDZ = false; EWSL = false; AWCZ = false; AHGS = 0; AHGM = 0; ALGS = 0; ALGM = 0; AMGS = 0; AMGM = 0; TLGM = 0; TLGS = 0; TMGM = 0; TMGS = 0; THGM = 0; THGS = 0; ELGM = 0; ELGS = 0; EMGM = 0; EMGS = 0; EHGM = 0; EHGS = 0; APS = 0; EPS = 0; PMA = 0; PMI = 0;
     ELGMBtn.innerText = 'Low Goal Miss: ' + ELGM.toString();
     ELGSBtn.innerText = 'Low Goal Score: ' + ELGS.toString();
     EMGSBtn.innerText = 'Mid Goal Score: ' + EMGS.toString();
@@ -90,6 +90,13 @@ APSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4
 EPSBtn = document.getElementById("EPS");
 EPSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EPS--;} else {EPS++;}EPSBtn.innerText = 'Power Shot: ' + EPS.toString();}
 
+AWCZBtn = document.getElementById("AWCZ");
+AWCZBtn.onmousedown = function () {AWCZ = !AWCZ; if (AWCZ) {AWCZBtn.innerText = 'Auto Wobble Correct Zone: In';} else {AWCZBtn.innerText = 'Auto Wobble Correct Zone: Out';}}
+EWSLBtn = document.getElementById("EWSL");
+EWSLBtn.onmousedown = function () {EWSL = !EWSL; if (EWSL) {EWSLBtn.innerText = 'Endgame Wobble Start Line: In';} else {EWSLBtn.innerText = 'Endgame Wobble Start Line: Out';}}
+EWDZBtn = document.getElementById("EWDZ");
+EWDZBtn.onmousedown = function () {EWDZ = !EWDZ; if (EWDZ) {EWDZBtn.innerText = 'Endgame Wobble Drop Zone: In';} else {EWDZBtn.innerText = 'Endgame Wobble Drop Zone: Out';}}
+
 // PMABtn = document.getElementById("PMA");
 // PMABtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMABtn.innerText = 'Major Penalty: ' + PMA.toString();}
 // PMIBtn = document.getElementById("PMI");
@@ -108,7 +115,7 @@ EPSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4
 // PMI4Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI4Btn.innerText = 'Minor Penalty: ' + PMI.toString();}
 
 let rqst = new XMLHttpRequest();
-//let url = "http://localhost:3000";
+//let url = "http://localhost:80";
 let url = 'https://8177bf3d7da2.ngrok.io';
 let type = "POST"
 let SendBtn = document.getElementById("send");
@@ -126,7 +133,8 @@ SendBtn.onclick = function () {
         Auto_High_Goal_Scored: AHGS.toString(),
         Auto_High_Goal_Missed: AHGM.toString(),
         Auto_Power_Shot_Target: APS.toString(),
-        Auto_Wobble_Correct_Zone: document.getElementById("AWCZ").value.toString(),
+        Auto_Wobble_Correct_Zone: AWCZ.toString(),
+        // Auto_Wobble_Correct_Zone: document.getElementById("AWCZ").value.toString(),
 
         Teleop_Low_Goal_Scored: TLGS.toString(),
         Teleop_Low_Goal_Missed: TLGM.toString(),
@@ -142,8 +150,10 @@ SendBtn.onclick = function () {
         Endgame_High_Goal_Scored: EHGS.toString(),
         Endgame_High_Goal_Missed: EHGM.toString(),
         Endgame_Power_Shot_Target: EPS.toString(),
-        Endgame_Wobble_Start_Line: document.getElementById("EWSL").value.toString(),
-        Endgame_Wobble_Drop_Zone: document.getElementById("EWDZ").value.toString(),
+        Endgame_Wobble_Start_Line: EWSL.toString(),
+        Endgame_Wobble_Drop_Zone: EWDZ.toString(),
+        // Endgame_Wobble_Start_Line: document.getElementById("EWSL").value.toString(),
+        // Endgame_Wobble_Drop_Zone: document.getElementById("EWDZ").value.toString(),
         Endgame_Wobble_Rings : document.getElementById("EWR").value.toString(),
 
         // Penalty_Major: PMA.toString(),

@@ -211,3 +211,19 @@
     color: darkgrey;
     font-size: 17px;
 }
+
+.boolean {
+    background-color: darkgrey;
+    border: none;
+    width: 49.39%;
+    color: white;
+    padding: 50px 80px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.boolean:hover {
+    background-color: #dddddd;
+}
