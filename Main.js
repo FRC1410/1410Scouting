@@ -1,4 +1,4 @@
-let EWDZ = false, EWSL = false, AWCZ = false, AHGS = 0, AHGM = 0, ALGS = 0, ALGM = 0, AMGS = 0, AMGM = 0, TLGM = 0, TLGS = 0, TMGM = 0, TMGS = 0, THGM = 0, THGS = 0, ELGM = 0, ELGS = 0, EMGM = 0, EMGS = 0, EHGM = 0, EHGS = 0, APS = 0, EPS = 0, PMA = 0, PMI = 0;
+let EWR = 0, EWDZ = false, EWSL = false, AWCZ = false, AHGS = 0, AHGM = 0, ALGS = 0, ALGM = 0, AMGS = 0, AMGM = 0, TLGM = 0, TLGS = 0, TMGM = 0, TMGS = 0, THGM = 0, THGS = 0, ELGM = 0, ELGS = 0, EMGM = 0, EMGS = 0, EHGM = 0, EHGS = 0, APS = 0, EPS = 0, PMA = 0, PMI = 0;
 const close = document.getElementsByClassName("close")[0];
 const modal = document.getElementById("modal");
 
@@ -17,7 +17,7 @@ function openTab(evt, tabName) {
 }
 
 function resetVar() {
-    EWDZ = false; EWSL = false; AWCZ = false; AHGS = 0; AHGM = 0; ALGS = 0; ALGM = 0; AMGS = 0; AMGM = 0; TLGM = 0; TLGS = 0; TMGM = 0; TMGS = 0; THGM = 0; THGS = 0; ELGM = 0; ELGS = 0; EMGM = 0; EMGS = 0; EHGM = 0; EHGS = 0; APS = 0; EPS = 0; PMA = 0; PMI = 0;
+    EWR = 0; EWDZ = false; EWSL = false; AWCZ = false; AHGS = 0; AHGM = 0; ALGS = 0; ALGM = 0; AMGS = 0; AMGM = 0; TLGM = 0; TLGS = 0; TMGM = 0; TMGS = 0; THGM = 0; THGS = 0; ELGM = 0; ELGS = 0; EMGM = 0; EMGS = 0; EHGM = 0; EHGS = 0; APS = 0; EPS = 0; PMA = 0; PMI = 0;
     ELGMBtn.innerText = 'Low Goal Miss: ' + ELGM.toString();
     ELGSBtn.innerText = 'Low Goal Score: ' + ELGS.toString();
     EMGSBtn.innerText = 'Mid Goal Score: ' + EMGS.toString();
@@ -38,6 +38,7 @@ function resetVar() {
     AHGMBtn.innerText = 'High Goal Miss: ' + AHGM.toString();
     APSBtn.innerText = 'Power Shot: ' + APS.toString();
     EPSBtn.innerText = 'Power Shot: ' + EPS.toString();
+    EWRBtn.innerText = 'Endgame Wobble Rings: ' + EWR.toString();
     // PMABtn.innerText = 'Major Penalty: ' + PMA.toString();
     // PMIBtn.innerText = 'Minor Penalty: ' + PMI.toString();
     // PMA2Btn.innerText = 'Major Penalty: ' + PMA.toString();
@@ -48,6 +49,8 @@ function resetVar() {
     // PMI4Btn.innerText = 'Minor Penalty: ' + PMI.toString();
 }
 
+EWRBtn = document.getElementById("EWR");
+EWRBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EWR--;} else {EWR++;}EWRBtn.innerText = 'Endgame Wobble Rings: ' + EWR.toString();}
 ELGMBtn = document.getElementById("ELGM");
 ELGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {ELGM--;} else {ELGM++;}ELGMBtn.innerText = 'Low Goal Miss: ' + ELGM.toString();}
 ELGSBtn = document.getElementById("ELGS");
@@ -93,7 +96,7 @@ EPSBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4
 AWCZBtn = document.getElementById("AWCZ");
 AWCZBtn.onmousedown = function () {AWCZ = !AWCZ; if (AWCZ) {AWCZBtn.innerText = 'Auto Wobble Correct Zone: In';} else {AWCZBtn.innerText = 'Auto Wobble Correct Zone: Out';}}
 EWSLBtn = document.getElementById("EWSL");
-EWSLBtn.onmousedown = function () {EWSL = !EWSL; if (EWSL) {EWSLBtn.innerText = 'Endgame Wobble Start Line: In';} else {EWSLBtn.innerText = 'Endgame Wobble Start Line: Out';}}
+EWSLBtn.onmousedown = function () {EWSL = !EWSL; if (EWSL) {EWSLBtn.innerText = 'Endgame Wobble Start Line: On';} else {EWSLBtn.innerText = 'Endgame Wobble Start Line: Off';}}
 EWDZBtn = document.getElementById("EWDZ");
 EWDZBtn.onmousedown = function () {EWDZ = !EWDZ; if (EWDZ) {EWDZBtn.innerText = 'Endgame Wobble Drop Zone: In';} else {EWDZBtn.innerText = 'Endgame Wobble Drop Zone: Out';}}
 
@@ -152,9 +155,10 @@ SendBtn.onclick = function () {
         Endgame_Power_Shot_Target: EPS.toString(),
         Endgame_Wobble_Start_Line: EWSL.toString(),
         Endgame_Wobble_Drop_Zone: EWDZ.toString(),
+        Endgame_Wobble_Rings: EWR.toString(),
         // Endgame_Wobble_Start_Line: document.getElementById("EWSL").value.toString(),
         // Endgame_Wobble_Drop_Zone: document.getElementById("EWDZ").value.toString(),
-        Endgame_Wobble_Rings : document.getElementById("EWR").value.toString(),
+        // Endgame_Wobble_Rings : document.getElementById("EWR").value.toString(),
 
         // Penalty_Major: PMA.toString(),
         // Penalty_Minor: PMI.toString(),
