@@ -1,6 +1,25 @@
 let EWR = 0, EWDZ = false, EWSL = false, AWCZ = false, AHGS = 0, AHGM = 0, ALGS = 0, ALGM = 0, AMGS = 0, AMGM = 0, TLGM = 0, TLGS = 0, TMGM = 0, TMGS = 0, THGM = 0, THGS = 0, ELGM = 0, ELGS = 0, EMGM = 0, EMGS = 0, EHGM = 0, EHGS = 0, APS = 0, EPS = 0, PMA = 0, PMI = 0;
 const close = document.getElementsByClassName("close")[0];
 const modal = document.getElementById("modal");
+let onlongtouch;
+let timer;
+const touchduration = 500; //length of time we want the user to touch before we do something
+
+function detectMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) //True if on mobile, false if not
+}
+
+function touchTime(btn) {
+    if (detectMobile()) {
+        if (btn.onmousedown()) {
+            timer = setTimeout(onlongtouch, touchduration);
+        }
+        onlongtouch = function () {
+            return true
+        };
+    }
+    return false;
+}
 
 function openTab(evt, tabName) {
     let i, tabContent, tabLink;
@@ -50,7 +69,7 @@ function resetVar() {
 }
 
 EWRBtn = document.getElementById("EWR");
-EWRBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EWR--;} else {EWR++;}EWRBtn.innerText = 'Endgame Wobble Rings: ' + EWR.toString();}
+EWRBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4 || touchTime(EWRBtn)) {EWR--;} else {EWR++;}EWRBtn.innerText = 'Endgame Wobble Rings: ' + EWR.toString();}
 ELGMBtn = document.getElementById("ELGM");
 ELGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {ELGM--;} else {ELGM++;}ELGMBtn.innerText = 'Low Goal Miss: ' + ELGM.toString();}
 ELGSBtn = document.getElementById("ELGS");
