@@ -6,6 +6,12 @@ function detectMobile() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) //True if on mobile, false if not
 }
 
+function touchDetect(event, variable) {
+    if (event.targetTouches.length === 2) { //2 Finger Detection
+        variable--;
+    }
+}
+
 function openTab(evt, tabName) {
     let i, tabContent, tabLink;
     tabContent = document.getElementsByClassName("tabContent");
