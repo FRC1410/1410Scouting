@@ -7,7 +7,7 @@ function detectMobile() {
 }
 
 function touchDetect(event, variable) {
-    if (event.targetTouches.length === 2) { //2 Finger Detection
+    if (event.targetTouches > 1) { //2 Finger Detection
         variable--;
     }
 }
