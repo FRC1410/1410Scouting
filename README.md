@@ -9,6 +9,8 @@ FRC Team 1410 is developing this app, but this app will likely be used by a few 
 
 The website can be accessed at https://1410Scouting.xyz, but it has no real functionality at the moment without access to the server.
 
+Server backend avalible at https://github.com/RowanEklund/1410ScoutingServer.
+
 More detailed README coming soon!
 
 Credits: Santiago Fiz, Rowan Eklund, Cosimo Plumb, and Fyodor Ionikh
