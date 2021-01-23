@@ -129,7 +129,7 @@ EWDZBtn.onmousedown = function () {EWDZ = !EWDZ; if (EWDZ) {EWDZBtn.innerText = 
 
 let rqst = new XMLHttpRequest();
 //let url = "http://localhost:80";
-let url = 'https://75018412cc96.ngrok.io';
+let url = 'https://a2063f08585b.ngrok.io';
 let type = "POST"
 let SendBtn = document.getElementById("send");
 
