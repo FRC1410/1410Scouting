@@ -1,6 +1,8 @@
 let EWR = 0, EWDZ = false, EWSL = false, AWCZ = false, AHGS = 0, AHGM = 0, ALGS = 0, ALGM = 0, AMGS = 0, AMGM = 0, TLGM = 0, TLGS = 0, TMGM = 0, TMGS = 0, THGM = 0, THGS = 0, ELGM = 0, ELGS = 0, EMGM = 0, EMGS = 0, EHGM = 0, EHGS = 0, APS = 0, EPS = 0, PMA = 0, PMI = 0;
-const close = document.getElementsByClassName("close")[0];
+const close = document.getElementById("close");
+const closeQR = document.getElementById("closeQR");
 const modal = document.getElementById("modal");
+const modalQR = document.getElementById("modalQR");
 
 function detectMobile() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) //True if on mobile, false if not
@@ -132,6 +134,7 @@ let rqst = new XMLHttpRequest();
 let url = 'https://9491d7f600f4.ngrok.io';
 let type = "POST"
 let SendBtn = document.getElementById("send");
+let QRBtn = document.getElementById("qr");
 
 SendBtn.onclick = function () {
     rqst.open(type, url, true);
@@ -174,16 +177,21 @@ SendBtn.onclick = function () {
         // Penalty_Minor: PMI.toString(),
     }));
     resetVar();
-
     modal.style.display = "block";
 }
 
-close.onclick = function () {
-    modal.style.display = "none";
+QRBtn.onclick = function () {
+    resetVar();
+    modalQR.style.display = "block";
 }
 
+close.onclick = function () {modal.style.display = "none";}
+
+closeQR.onclick = function () {modalQR.style.display = "none";}
+
 window.onclick = function(event) {
-    if (event.target === modal) {
+    if (event.target === modal || event.target === modalQR) {
         modal.style.display = "none";
+        modalQR.style.display = "none";
     }
 }

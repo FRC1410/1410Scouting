@@ -58,6 +58,24 @@
 
 .proletariat:active {background-color: #3e8e41}
 
+.proletariat-miss {
+    background-color: crimson;
+    border: none;
+    width: 49.39%;
+    color: white;
+    padding: 50px 80px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.proletariat-miss:hover {
+    background-color: red;
+}
+
+.proletariat-miss:active {background-color: #950000}
+
 .proletariat-high {
     background-color: #4CAF50;
     border: none;
@@ -117,7 +135,7 @@
     background-color: #2b64ba;
     border: none;
     color: white;
-    width: 99%;
+    width: 49.39%;
     padding: 50px 80px;
     margin-bottom: 5px;
     text-align: center;
@@ -129,8 +147,26 @@
     background-color: cornflowerblue;
 }
 
-.BIGDATA:active {background-color: #173965
+.BIGDATA:active {background-color: #173965}
+
+.Qr {
+    margin-top: 5px;
+    background-color: steelblue;
+    border: none;
+    color: white;
+    width: 49.39%;
+    padding: 50px 80px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
 }
+
+.Qr:hover {
+    background-color: dodgerblue;
+}
+
+.Qr:active {background-color: royalblue}
 
 /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal*/
 
