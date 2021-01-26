@@ -76,16 +76,19 @@
                     <h1>BIG DATA Sent!</h1>
                 </div>
             </div>
+
             <button type="button" class="Qr" id="qr">Get QR Code</button>
             <div id = "modalQR" class = "modal">
                 <div class="modal-content">
                     <span class="close" id="closeQR">&times;</span>
                     <h1>QR Code Goes Here</h1>
+                    <canvas id="qr-code"></canvas>
                 </div>
             </div>
         </div>
         <p class = "credits">Unofficial © FRC Team 1410&emsp;&emsp;&emsp;&emsp;Created by Rowan Eklund & Santiago Fiz with help from Consultant Cosimo Plumb & Supreme Leader Fyodor Ionikh&emsp;&emsp;&emsp;&emsp;Do not copy or distribute unless you want to.</p>
 <!--        <img src="favicon.png" alt="Kraken"> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
         <script src="Main.js"></script>
     </body>
 </html>

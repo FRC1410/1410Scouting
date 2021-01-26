@@ -3,16 +3,77 @@ const close = document.getElementById("close");
 const closeQR = document.getElementById("closeQR");
 const modal = document.getElementById("modal");
 const modalQR = document.getElementById("modalQR");
+const SendBtn = document.getElementById("send");
+const QRBtn = document.getElementById("qr");
 
-function detectMobile() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) //True if on mobile, false if not
+
+let rqst = new XMLHttpRequest();
+//let url = "http://localhost:80";
+let url = 'https://9491d7f600f4.ngrok.io';
+let type = "POST"
+let qr;
+
+(function() {
+    qr = new QRious({
+        element: document.getElementById('qr-code'),
+        size: 200,
+    });
+})();
+
+function generateQRCode() {
+    qr.set({
+        foreground: 'black',
+        size: 200,
+        value: JSON.stringify({
+            Scout_Number: document.getElementById("SN").value.toString(),
+            Team_Number: document.getElementById("TN").value.toString(),
+            Auto_Low_Goal_Scored: ALGS.toString(),
+            Auto_Low_Goal_Missed: ALGM.toString(),
+            Auto_Mid_Goal_Scored: AMGS.toString(),
+            Auto_Mid_Goal_Missed: AMGM.toString(),
+            Auto_High_Goal_Scored: AHGS.toString(),
+            Auto_High_Goal_Missed: AHGM.toString(),
+            Auto_Power_Shot_Target: APS.toString(),
+            Auto_Wobble_Correct_Zone: AWCZ.toString(),
+            // Auto_Wobble_Correct_Zone: document.getElementById("AWCZ").value.toString(),
+
+            Teleop_Low_Goal_Scored: TLGS.toString(),
+            Teleop_Low_Goal_Missed: TLGM.toString(),
+            Teleop_Mid_Goal_Scored: TMGS.toString(),
+            Teleop_Mid_Goal_Missed: TMGM.toString(),
+            Teleop_High_Goal_Scored: THGS.toString(),
+            Teleop_High_Goal_Missed: THGM.toString(),
+
+            Endgame_Low_Goal_Scored: ELGS.toString(),
+            Endgame_Low_Goal_Missed: ELGM.toString(),
+            Endgame_Mid_Goal_Scored: EMGS.toString(),
+            Endgame_Mid_Goal_Missed: EMGM.toString(),
+            Endgame_High_Goal_Scored: EHGS.toString(),
+            Endgame_High_Goal_Missed: EHGM.toString(),
+            Endgame_Power_Shot_Target: EPS.toString(),
+            Endgame_Wobble_Start_Line: EWSL.toString(),
+            Endgame_Wobble_Drop_Zone: EWDZ.toString(),
+            Endgame_Wobble_Rings: EWR.toString(),
+            // Endgame_Wobble_Start_Line: document.getElementById("EWSL").value.toString(),
+            // Endgame_Wobble_Drop_Zone: document.getElementById("EWDZ").value.toString(),
+            // Endgame_Wobble_Rings : document.getElementById("EWR").value.toString(),
+
+            // Penalty_Major: PMA.toString(),
+            // Penalty_Minor: PMI.toString(),
+        })
+    });
 }
 
-function touchDetect(event, variable) {
-    if (event.targetTouches > 1) { //2 Finger Detection
-        variable--;
-    }
-}
+
+// function detectMobile() {
+//     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) //True if on mobile, false if not
+// }
+//
+// function touchDetect(event, variable) {
+//     if (event.targetTouches > 1) { //2 Finger Detection
+//         variable--;
+//     }
+// }
 
 function openTab(evt, tabName) {
     let i, tabContent, tabLink;
@@ -129,13 +190,6 @@ EWDZBtn.onmousedown = function () {EWDZ = !EWDZ; if (EWDZ) {EWDZBtn.innerText = 
 // PMI4Btn = document.getElementById("PMI4");
 // PMI4Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI4Btn.innerText = 'Minor Penalty: ' + PMI.toString();}
 
-let rqst = new XMLHttpRequest();
-//let url = "http://localhost:80";
-let url = 'https://9491d7f600f4.ngrok.io';
-let type = "POST"
-let SendBtn = document.getElementById("send");
-let QRBtn = document.getElementById("qr");
-
 SendBtn.onclick = function () {
     rqst.open(type, url, true);
     rqst.setRequestHeader("Content-Type", "application/json");
@@ -181,6 +235,7 @@ SendBtn.onclick = function () {
 }
 
 QRBtn.onclick = function () {
+    generateQRCode();
     resetVar();
     modalQR.style.display = "block";
 }
