@@ -40,28 +40,10 @@
     background-color: #0C0503
 }
 
-.proletariat {
-    background-color: #4CAF50;
-    border: none;
-    width: 49.39%;
-    color: white;
-    padding: 50px 80px;
-    text-align: center;
-    font-size: 16px;
-    margin-top: 5px;
-    cursor: pointer;
-}
-
-.proletariat:hover {
-    background-color: limegreen;
-}
-
-.proletariat:active {background-color: #3e8e41}
-
 .proletariat-miss {
     background-color: crimson;
     border: none;
-    width: 49.39%;
+    width: 32.92%;
     color: white;
     padding: 50px 80px;
     text-align: center;
@@ -76,10 +58,10 @@
 
 .proletariat-miss:active {background-color: #950000}
 
-.proletariat-high {
+.proletariat {
     background-color: #4CAF50;
     border: none;
-    width: 49.39%;
+    width: 32.92%;
     color: white;
     padding: 50px 80px;
     text-align: center;
@@ -88,16 +70,16 @@
     cursor: pointer;
 }
 
-.proletariat-high:hover {
+.proletariat:hover {
     background-color: limegreen;
 }
 
-.proletariat-high:active {background-color: #3e8e41}
+.proletariat:active {background-color: #3e8e41}
 
-.proletariat-mid {
+.proletariat-minus {
     background-color: #4CAF50;
-    border: none;
-    width: 49.39%;
+    border:none;
+    width: 16.46%;
     color: white;
     padding: 50px 80px;
     text-align: center;
@@ -106,16 +88,16 @@
     cursor: pointer;
 }
 
-.proletariat-mid:hover {
+.proletariat-minus:hover {
     background-color: limegreen;
 }
 
-.proletariat-mid:active {background-color: #3e8e41}
+.proletariat-minus:active {background-color: #3e8e41}
 
-.proletariat-low {
-    background-color: #4CAF50;
-    border: none;
-    width: 49.39%;
+.proletariat-minus-miss {
+    background-color: crimson;
+    border:none;
+    width: 16.46%;
     color: white;
     padding: 50px 80px;
     text-align: center;
@@ -124,18 +106,18 @@
     cursor: pointer;
 }
 
-.proletariat-low:hover {
-    background-color: limegreen;
+.proletariat-minus-miss:hover {
+    background-color: red;
 }
 
-.proletariat-low:active {background-color: #3e8e41}
+.proletariat-minus-miss:active {background-color: #950000}
 
 .BIGDATA {
     margin-top: 5px;
     background-color: #2b64ba;
     border: none;
     color: white;
-    width: 49.39%;
+    width: 49.55%;
     padding: 50px 80px;
     margin-bottom: 5px;
     text-align: center;
@@ -154,7 +136,7 @@
     background-color: steelblue;
     border: none;
     color: white;
-    width: 49.39%;
+    width: 49.55%;
     padding: 50px 80px;
     margin-bottom: 5px;
     text-align: center;
@@ -214,25 +196,6 @@
 
 }
 
-.BAD {
-    background-color: crimson;
-    border: none;
-    width: 49.39%;
-    color: white;
-    padding: 50px 80px;
-    margin-top: 5px;
-    text-align: center;
-    font-size: 16px;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.BAD:hover {
-    background-color: red;
-}
-
-.BAD:active {background-color: #950000}
-
 .input {
     margin-bottom: 2px;
     margin-top: 2px;
@@ -240,7 +203,6 @@
     width: 49%;
     font-size: 16px;
     background-color: white;
-    display: inline-block;
 }
 
 .credits {
@@ -251,7 +213,7 @@
 .boolean {
     background-color: darkgrey;
     border: none;
-    width: 49.39%;
+    width: 49.55%;
     color: white;
     padding: 50px 80px;
     text-align: center;

@@ -121,9 +121,32 @@ function resetVar() {
     // PMA4Btn.innerText = 'Major Penalty: ' + PMA.toString();
     // PMI4Btn.innerText = 'Minor Penalty: ' + PMI.toString();
 }
+AHGSM = document.getElementById("AHGSM"); AHGSM.onmousedown = function () {AHGS--; AHGSBtn.innerText = 'High Goal Score: ' + AHGS.toString();}
+AHGMM = document.getElementById("AHGMM"); AHGMM.onmousedown = function () {AHGM--; AHGMBtn.innerText = 'High Goal Miss: ' + AHGM.toString();}
+AMGSM = document.getElementById("AMGSM"); AMGSM.onmousedown = function () {AMGS--; AMGSBtn.innerText = 'Mid Goal Score: ' + AMGS.toString();}
+AMGMM = document.getElementById("AMGMM"); AMGMM.onmousedown = function () {AMGM--; AMGMBtn.innerText = 'Mid Goal Miss: ' + AMGM.toString();}
+ALGSM = document.getElementById("ALGSM"); ALGSM.onmousedown = function () {ALGS--; ALGSBtn.innerText = 'Low Goal Score: ' + ALGS.toString();}
+ALGMM = document.getElementById("ALGMM"); ALGMM.onmousedown = function () {ALGM--; ALGMBtn.innerText = 'Low Goal Miss: ' + ALGM.toString();}
+APSM = document.getElementById("APSM"); APSM.onmousedown = function () {APS--; APSBtn.innerText = 'Power Shot: ' + APS.toString();}
+
+THGSM = document.getElementById("THGSM"); THGSM.onmousedown = function () {THGS--; THGSBtn.innerText = 'High Goal Score: ' + THGS.toString();}
+THGMM = document.getElementById("THGMM"); THGMM.onmousedown = function () {THGM--; THGMBtn.innerText = 'High Goal Miss: ' + THGM.toString();}
+TMGSM = document.getElementById("TMGSM"); TMGSM.onmousedown = function () {TMGS--; TMGSBtn.innerText = 'Mid Goal Score: ' + TMGS.toString();}
+TMGMM = document.getElementById("TMGMM"); TMGMM.onmousedown = function () {TMGM--; TMGMBtn.innerText = 'Mid Goal Miss: ' + TMGM.toString();}
+TLGSM = document.getElementById("TLGSM"); TLGSM.onmousedown = function () {TLGS--; TLGSBtn.innerText = 'Low Goal Score: ' + TLGS.toString();}
+TLGMM = document.getElementById("TLGMM"); TLGMM.onmousedown = function () {TLGM--; TLGMBtn.innerText = 'Low Goal Miss: ' + TLGM.toString();}
+
+EHGSM = document.getElementById("EHGSM"); EHGSM.onmousedown = function () {EHGS--; EHGSBtn.innerText = 'High Goal Score: ' + EHGS.toString();}
+EHGMM = document.getElementById("EHGMM"); EHGMM.onmousedown = function () {EHGM--; EHGMBtn.innerText = 'High Goal Miss: ' + EHGM.toString();}
+EMGSM = document.getElementById("EMGSM"); EMGSM.onmousedown = function () {EMGS--; EMGSBtn.innerText = 'Mid Goal Score: ' + EMGS.toString();}
+EMGMM = document.getElementById("EMGMM"); EMGMM.onmousedown = function () {EMGM--; EMGMBtn.innerText = 'Mid Goal Miss: ' + EMGM.toString();}
+ELGSM = document.getElementById("ELGSM"); ELGSM.onmousedown = function () {ELGS--; ELGSBtn.innerText = 'Low Goal Score: ' + ELGS.toString();}
+ELGMM = document.getElementById("ELGMM"); ELGMM.onmousedown = function () {ELGM--; ELGMBtn.innerText = 'Low Goal Miss: ' + ELGM.toString();}
+EPSM = document.getElementById("EPSM"); EPSM.onmousedown = function () {EPS--; EPSBtn.innerText = 'Power Shot: ' + EPS.toString();}
+EWRM = document.getElementById("EWRM"); EWRM.onmousedown = function () {EWR--; EWRBtn.innerText = 'Wobble Rings: ' + EWR.toString();}
 
 EWRBtn = document.getElementById("EWR");
-EWRBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EWR--;} else {EWR++;}EWRBtn.innerText = 'Endgame Wobble Rings: ' + EWR.toString();}
+EWRBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {EWR--;} else {EWR++;}EWRBtn.innerText = 'Wobble Rings: ' + EWR.toString();}
 ELGMBtn = document.getElementById("ELGM");
 ELGMBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {ELGM--;} else {ELGM++;}ELGMBtn.innerText = 'Low Goal Miss: ' + ELGM.toString();}
 ELGSBtn = document.getElementById("ELGS");
@@ -172,23 +195,6 @@ EWSLBtn = document.getElementById("EWSL");
 EWSLBtn.onmousedown = function () {EWSL = !EWSL; if (EWSL) {EWSLBtn.innerText = 'Endgame Wobble Start Line: On';} else {EWSLBtn.innerText = 'Endgame Wobble Start Line: Off';}}
 EWDZBtn = document.getElementById("EWDZ");
 EWDZBtn.onmousedown = function () {EWDZ = !EWDZ; if (EWDZ) {EWDZBtn.innerText = 'Endgame Wobble Drop Zone: In';} else {EWDZBtn.innerText = 'Endgame Wobble Drop Zone: Out';}}
-
-// PMABtn = document.getElementById("PMA");
-// PMABtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMABtn.innerText = 'Major Penalty: ' + PMA.toString();}
-// PMIBtn = document.getElementById("PMI");
-// PMIBtn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMIBtn.innerText = 'Minor Penalty: ' + PMI.toString();}
-// PMA2Btn = document.getElementById("PMA2");
-// PMA2Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMA2Btn.innerText = 'Major Penalty: ' + PMA.toString();}
-// PMI2Btn = document.getElementById("PMI2");
-// PMI2Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI2Btn.innerText = 'Minor Penalty: ' + PMI.toString();}
-// PMA3Btn = document.getElementById("PMA3");
-// PMA3Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMA3Btn.innerText = 'Major Penalty: ' + PMA.toString();}
-// PMI3Btn = document.getElementById("PMI3");
-// PMI3Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI3Btn.innerText = 'Minor Penalty: ' + PMI.toString();}
-// PMA4Btn = document.getElementById("PMA4");
-// PMA4Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMA--;} else {PMA++;}PMA4Btn.innerText = 'Major Penalty: ' + PMA.toString();}
-// PMI4Btn = document.getElementById("PMI4");
-// PMI4Btn.onmousedown = function () {if (event.buttons === 2 || event.buttons === 4) {PMI--;} else {PMI++;}PMI4Btn.innerText = 'Minor Penalty: ' + PMI.toString();}
 
 SendBtn.onclick = function () {
     rqst.open(type, url, true);
