@@ -9,7 +9,7 @@ const QRBtn = document.getElementById("qr");
 
 let rqst = new XMLHttpRequest();
 //let url = "http://localhost:80";
-let url = 'https://9491d7f600f4.ngrok.io';
+let url = 'https://965d-2601-282-380-6a20-b578-fbac-d5ad-a49c.ngrok.io';
 let type = "POST"
 let qr;
 
