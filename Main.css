@@ -40,7 +40,7 @@
     background-color: #0C0503
 }
 
-.proletariat-miss {
+.main-miss {
     background-color: crimson;
     border: none;
     width: 32.92%;
@@ -52,13 +52,13 @@
     cursor: pointer;
 }
 
-.proletariat-miss:hover {
+.main-miss:hover {
     background-color: red;
 }
 
-.proletariat-miss:active {background-color: #950000}
+.main-miss:active {background-color: #950000}
 
-.proletariat {
+.main {
     background-color: #4CAF50;
     border: none;
     width: 32.92%;
@@ -70,13 +70,13 @@
     cursor: pointer;
 }
 
-.proletariat:hover {
+.main:hover {
     background-color: limegreen;
 }
 
-.proletariat:active {background-color: #3e8e41}
+.main:active {background-color: #3e8e41}
 
-.proletariat-minus {
+.main-minus {
     background-color: #4CAF50;
     border:none;
     width: 16.46%;
@@ -88,13 +88,13 @@
     cursor: pointer;
 }
 
-.proletariat-minus:hover {
+.main-minus:hover {
     background-color: limegreen;
 }
 
-.proletariat-minus:active {background-color: #3e8e41}
+.main-minus:active {background-color: #3e8e41}
 
-.proletariat-minus-miss {
+.main-minus-miss {
     background-color: crimson;
     border:none;
     width: 16.46%;
@@ -106,13 +106,13 @@
     cursor: pointer;
 }
 
-.proletariat-minus-miss:hover {
+.main-minus-miss:hover {
     background-color: red;
 }
 
-.proletariat-minus-miss:active {background-color: #950000}
+.main-minus-miss:active {background-color: #950000}
 
-.BIGDATA {
+.data {
     margin-top: 5px;
     background-color: #2b64ba;
     border: none;
@@ -125,11 +125,11 @@
     cursor: pointer;
 }
 
-.BIGDATA:hover {
+.data:hover {
     background-color: cornflowerblue;
 }
 
-.BIGDATA:active {background-color: #173965}
+.data:active {background-color: #173965}
 
 .Qr {
     margin-top: 5px;

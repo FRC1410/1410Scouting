@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="qrious" level="application" />
+    <orderEntry type="library" name="qrious" level="application" />
   </component>
 </module>
