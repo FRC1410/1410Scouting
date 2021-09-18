@@ -16,10 +16,24 @@
         </div>
 
         <div id="PreGame" class="tabContent">
-            <input type="text" id="TN" class="input" placeholder="Team #">
             <input type="text" id="SN" class="input" placeholder="Scout's First Name">
-<!--            <button type="button" class="BAD" id="PMA4">Major Penalty</button>-->
-<!--            <button type="button" class="BAD" id="PMI4">Minor Penalty</button>-->
+            <select id="TN" class="dropdown">
+<!--                put team numbers from each event here-->
+                <option value="Default">Team Number</option>
+                <option value="254">254</option>
+                <option value="1410">1410</option>
+                <option value="118">118</option>
+                <option value="1619">1619</option>
+            </select>
+            <select id="AS" class="dropdown">
+                <option value="Default">Alliance Station</option>
+                <option value="R1">R1</option>
+                <option value="R2">R2</option>
+                <option value="R3">R3</option>
+                <option value="B1">B1</option>
+                <option value="B2">B2</option>
+                <option value="B3">B3</option>
+            </select>
         </div>
 
         <div id="Auto" class="tabContent">
@@ -39,11 +53,6 @@
             <button type="button" class="main-minus" id="APSM">-</button>
 
             <button type="button" class="boolean" id="AWCZ">Auto Wobble Correct Zone</button>
-
-<!--            <input type="text" id="AWCZ" class="input" placeholder="Auto Wobble Correct Zone">-->
-
-<!--            <button type="button" class="BAD" id="PMA">Major Penalty</button>-->
-<!--            <button type="button" class="BAD" id="PMI">Minor Penalty</button>-->
         </div>
         <div id="Tele-op" class="tabContent">
             <button type="button" class="main" id="THGS" onclick="touchDetect(Event, THGS)">High Goal Score</button>
@@ -58,8 +67,6 @@
             <button type="button" class="main-minus" id="TLGSM">-</button>
             <button type="button" class="main-miss" id="TLGM" onclick="touchDetect(Event, TLGM)">Low Goal Miss</button>
             <button type="button" class="main-minus-miss" id="TLGMM">-</button>
-<!--            <button type="button" class="BAD" id="PMA2">Major Penalty</button>-->
-<!--            <button type="button" class="BAD" id="PMI2">Minor Penalty</button>-->
         </div>
         <div id="Endgame" class="tabContent">
             <button type="button" class="main" id="EHGS" onclick="touchDetect(Event, EHGS)">High Goal Score</button>
@@ -83,12 +90,6 @@
             <button type="button" class="main-minus" id="EWRM">-</button>
             <button type="button" class="boolean" id="EWSL">Endgame Wobble Start Line</button>
             <button type="button" class="boolean" id="EWDZ">Auto Wobble Correct Zone</button>
-<!--            <input type="text" id="EWSL" class="input" placeholder="Endgame Wobble Start Line">-->
-<!--            <input type="text" id="EWDZ" class="input" placeholder="Endgame Wobble Drop Zone">-->
-<!--            <input type="text" id="EWR" class="input" placeholder="Endgame Wobble Rings #">-->
-
-<!--            <button type="button" class="BAD" id="PMA3">Major Penalty</button>-->
-<!--            <button type="button" class="BAD" id="PMI3">Minor Penalty</button>-->
 
             <button type="button" class="data" id="send">Send Scouting Data</button>
             <div id = "modal" class = "modal">
@@ -108,7 +109,6 @@
             </div>
         </div>
         <p class = "credits">Unofficial © FRC Team 1410 Patent Pending <sup>Pending</sup> Trademark&emsp;&emsp;&emsp;&emsp;Created by Rowan Eklund & Santiago Fiz with help from Consultant Cosimo Plumb & Data Daddy Fyodor Ionikh&emsp;&emsp;&emsp;&emsp;Do not copy or distribute unless you want to.</p>
-<!--        <img src="favicon.png" alt="Kraken"> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
         <script src="Main.js"></script>
     </body>

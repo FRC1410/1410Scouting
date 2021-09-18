@@ -27,6 +27,7 @@ function generateQRCode() {
         value: JSON.stringify({
             Scout_Number: document.getElementById("SN").value.toString(),
             Team_Number: document.getElementById("TN").value.toString(),
+            Alliance_Station: document.getElementById("AS").value.toString(),
             Auto_Low_Goal_Scored: ALGS.toString(),
             Auto_Low_Goal_Missed: ALGM.toString(),
             Auto_Mid_Goal_Scored: AMGS.toString(),
@@ -35,7 +36,6 @@ function generateQRCode() {
             Auto_High_Goal_Missed: AHGM.toString(),
             Auto_Power_Shot_Target: APS.toString(),
             Auto_Wobble_Correct_Zone: AWCZ.toString(),
-            // Auto_Wobble_Correct_Zone: document.getElementById("AWCZ").value.toString(),
 
             Teleop_Low_Goal_Scored: TLGS.toString(),
             Teleop_Low_Goal_Missed: TLGM.toString(),
@@ -54,26 +54,9 @@ function generateQRCode() {
             Endgame_Wobble_Start_Line: EWSL.toString(),
             Endgame_Wobble_Drop_Zone: EWDZ.toString(),
             Endgame_Wobble_Rings: EWR.toString(),
-            // Endgame_Wobble_Start_Line: document.getElementById("EWSL").value.toString(),
-            // Endgame_Wobble_Drop_Zone: document.getElementById("EWDZ").value.toString(),
-            // Endgame_Wobble_Rings : document.getElementById("EWR").value.toString(),
-
-            // Penalty_Major: PMA.toString(),
-            // Penalty_Minor: PMI.toString(),
         })
     });
 }
-
-
-// function detectMobile() {
-//     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) //True if on mobile, false if not
-// }
-//
-// function touchDetect(event, variable) {
-//     if (event.targetTouches > 1) { //2 Finger Detection
-//         variable--;
-//     }
-// }
 
 function openTab(evt, tabName) {
     let i, tabContent, tabLink;
@@ -112,14 +95,6 @@ function resetVar() {
     APSBtn.innerText = 'Power Shot: ' + APS.toString();
     EPSBtn.innerText = 'Power Shot: ' + EPS.toString();
     EWRBtn.innerText = 'Endgame Wobble Rings: ' + EWR.toString();
-    // PMABtn.innerText = 'Major Penalty: ' + PMA.toString();
-    // PMIBtn.innerText = 'Minor Penalty: ' + PMI.toString();
-    // PMA2Btn.innerText = 'Major Penalty: ' + PMA.toString();
-    // PMI2Btn.innerText = 'Minor Penalty: ' + PMI.toString();
-    // PMA3Btn.innerText = 'Major Penalty: ' + PMA.toString();
-    // PMI3Btn.innerText = 'Minor Penalty: ' + PMI.toString();
-    // PMA4Btn.innerText = 'Major Penalty: ' + PMA.toString();
-    // PMI4Btn.innerText = 'Minor Penalty: ' + PMI.toString();
 }
 AHGSM = document.getElementById("AHGSM"); AHGSM.onmousedown = function () {AHGS--; AHGSBtn.innerText = 'High Goal Score: ' + AHGS.toString();}
 AHGMM = document.getElementById("AHGMM"); AHGMM.onmousedown = function () {AHGM--; AHGMBtn.innerText = 'High Goal Miss: ' + AHGM.toString();}
@@ -202,6 +177,7 @@ SendBtn.onclick = function () {
     rqst.send(JSON.stringify({
         Scout_Number: document.getElementById("SN").value.toString(),
         Team_Number: document.getElementById("TN").value.toString(),
+        Alliance_Station: document.getElementById("AS").value.toString(),
         Auto_Low_Goal_Scored: ALGS.toString(),
         Auto_Low_Goal_Missed: ALGM.toString(),
         Auto_Mid_Goal_Scored: AMGS.toString(),
@@ -210,7 +186,6 @@ SendBtn.onclick = function () {
         Auto_High_Goal_Missed: AHGM.toString(),
         Auto_Power_Shot_Target: APS.toString(),
         Auto_Wobble_Correct_Zone: AWCZ.toString(),
-        // Auto_Wobble_Correct_Zone: document.getElementById("AWCZ").value.toString(),
 
         Teleop_Low_Goal_Scored: TLGS.toString(),
         Teleop_Low_Goal_Missed: TLGM.toString(),
@@ -229,12 +204,6 @@ SendBtn.onclick = function () {
         Endgame_Wobble_Start_Line: EWSL.toString(),
         Endgame_Wobble_Drop_Zone: EWDZ.toString(),
         Endgame_Wobble_Rings: EWR.toString(),
-        // Endgame_Wobble_Start_Line: document.getElementById("EWSL").value.toString(),
-        // Endgame_Wobble_Drop_Zone: document.getElementById("EWDZ").value.toString(),
-        // Endgame_Wobble_Rings : document.getElementById("EWR").value.toString(),
-
-        // Penalty_Major: PMA.toString(),
-        // Penalty_Minor: PMI.toString(),
     }));
     resetVar();
     modal.style.display = "block";
