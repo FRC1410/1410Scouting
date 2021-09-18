@@ -225,3 +225,23 @@
 .boolean:hover {
     background-color: #dddddd;
 }
+
+.boolean:active {background-color: dimgrey}
+
+.dropdown {
+    background-color: #5BBEA2;
+    border: none;
+    width: 49.55%;
+    color: white;
+    padding: 50px 80px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.dropdown:hover {
+    background-color: cadetblue;
+}
+
+.dropdown:active {background-color: teal}
