@@ -77,6 +77,11 @@ function resetVar() {
     PCMain.innerText = 'Position Control: Didnt Attempt';
     DFMain.innerText = 'Dead on Field (Greater than 15 seconds): False';
     BalMain.innerText = 'Balanced: Failure';
+
+    document.getElementById("TN").selectedIndex = 0;
+    document.getElementById("AS").selectedIndex = 0;
+    document.getElementById("Climb").selectedIndex = 0;
+
 }
 //dealing with all the minus buttons
 AL1SMinus = document.getElementById("Auto L1 Scored Minus"); AL1SMinus.onmousedown = function () {AL1S--; AL1SMain.innerText = 'Level 1 Cells Scored: ' + AL1S.toString();}

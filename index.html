@@ -19,20 +19,24 @@
             <input type="text" id="SN" class="input" placeholder="Scout's First Name">
             <select id="TN" class="dropdown">
 <!--                put team numbers from each event here-->
-                <option value="Default">Team Number</option>
+                <option value="Default" selected hidden>Team Number</option>
                 <option value="254">254</option>
                 <option value="1410">1410</option>
                 <option value="118">118</option>
                 <option value="1619">1619</option>
             </select>
             <select id="AS" class="dropdown">
-                <option value="Default">Alliance Station</option>
-                <option value="R1">R1</option>
-                <option value="R2">R2</option>
-                <option value="R3">R3</option>
-                <option value="B1">B1</option>
-                <option value="B2">B2</option>
-                <option value="B3">B3</option>
+                <option value="Default" selected hidden>Alliance Station</option>
+                <optgroup label="Red Alliance">
+                    <option value="R1">R1</option>
+                    <option value="R2">R2</option>
+                    <option value="R3">R3</option>
+                </optgroup>
+                <optgroup label="Blue Alliance">
+                    <option value="B1">B1</option>
+                    <option value="B2">B2</option>
+                    <option value="B3">B3</option>
+                </optgroup>
             </select>
         </div>
 
@@ -60,7 +64,7 @@
         </div>
         <div id="Endgame" class="tabContent">
             <select id="Climb" class="dropdown">
-                <option value="Default">Final Position</option>
+                <option value="Default" selected hidden>Final Position</option>
                 <option value="Successful climb">Successful Climb</option>
                 <option value="Parked">Parked</option>
                 <option value="None of above">None of Above</option>
