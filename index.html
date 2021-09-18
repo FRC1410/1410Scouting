@@ -37,59 +37,36 @@
         </div>
 
         <div id="Auto" class="tabContent">
-            <button type="button" class="main" id="AHGS" onclick="touchDetect(Event, AHGS)">High Goal Score</button>
-            <button type="button" class="main-minus" id="AHGSM">-</button>
-            <button type="button" class="main-miss" id="AHGM" onclick="touchDetect(Event, AHGM)">High Goal Miss</button>
-            <button type="button" class="main-minus-miss" id="AHGMM">-</button>
-            <button type="button" class="main" id="AMGS" onclick="touchDetect(Event, AMGS)">Mid Goal Score</button>
-            <button type="button" class="main-minus" id="AMGSM">-</button>
-            <button type="button" class="main-miss" id="AMGM" onclick="touchDetect(Event, AMGM)">Mid Goal Miss</button>
-            <button type="button" class="main-minus-miss" id="AMGMM">-</button>
-            <button type="button" class="main" id="ALGS" onclick="touchDetect(Event, ALGS)">Low Goal Score</button>
-            <button type="button" class="main-minus" id="ALGSM">-</button>
-            <button type="button" class="main-miss" id="ALGM" onclick="touchDetect(Event, ALGM)">Low Goal Miss</button>
-            <button type="button" class="main-minus-miss" id="ALGMM">-</button>
-            <button type="button" class="main" id="APS" onclick="touchDetect(Event, APS)">Power Shot</button>
-            <button type="button" class="main-minus" id="APSM">-</button>
+            <button type="button" class="boolean" id="Auto Line">Auto Line</button>
 
-            <button type="button" class="boolean" id="AWCZ">Auto Wobble Correct Zone</button>
+            <button type="button" class="main" id="Auto L1 Scored" onclick="touchDetect(Event, AHGS)">Level 1 Cells Scored</button>
+            <button type="button" class="main-minus" id="Auto L1 Scored Minus">-</button>
+            <button type="button" class="main" id="Auto L2 Scored" onclick="touchDetect(Event, AMGS)">Level 2 Cells Scored</button>
+            <button type="button" class="main-minus" id="Auto L2 Scored Minus">-</button>
+            <button type="button" class="main-miss" id="Auto Shots Missed" onclick="touchDetect(Event, AMGM)">Shots Missed</button>
+            <button type="button" class="main-minus-miss" id="Auto Shots Missed Minus">-</button>
         </div>
         <div id="Tele-op" class="tabContent">
-            <button type="button" class="main" id="THGS" onclick="touchDetect(Event, THGS)">High Goal Score</button>
-            <button type="button" class="main-minus" id="THGSM">-</button>
-            <button type="button" class="main-miss" id="THGM" onclick="touchDetect(Event, THGM)">High Goal Miss</button>
-            <button type="button" class="main-minus-miss" id="THGMM">-</button>
-            <button type="button" class="main" id="TMGS" onclick="touchDetect(Event, TMGS)">Mid Goal Score</button>
-            <button type="button" class="main-minus" id="TMGSM">-</button>
-            <button type="button" class="main-miss" id="TMGM" onclick="touchDetect(Event, TMGM)">Mid Goal Miss</button>
-            <button type="button" class="main-minus-miss" id="TMGMM">-</button>
-            <button type="button" class="main" id="TLGS" onclick="touchDetect(Event, TLGS)">Low Goal Score</button>
-            <button type="button" class="main-minus" id="TLGSM">-</button>
-            <button type="button" class="main-miss" id="TLGM" onclick="touchDetect(Event, TLGM)">Low Goal Miss</button>
-            <button type="button" class="main-minus-miss" id="TLGMM">-</button>
+            <button type="button" class="main" id="Teleop L1 Scored" onclick="touchDetect(Event, THGS)">Level 1 Cells Scored</button>
+            <button type="button" class="main-minus" id="Teleop L1 Scored Minus">-</button>
+            <button type="button" class="main" id="Teleop L2 Scored" onclick="touchDetect(Event, TMGS)">Level 2 Cells Scored</button>
+            <button type="button" class="main-minus" id="Teleop L2 Scored Minus">-</button>
+            <button type="button" class="main-miss" id="Teleop Shots Missed" onclick="touchDetect(Event, TLGM)">Shots Missed</button>
+            <button type="button" class="main-minus-miss" id="Teleop Shots Missed Minus">-</button>
+
+            <button type="button" class="boolean" id="Rotation">Rotation Control</button>
+            <button type="button" class="boolean" id="Position">Position Control</button>
+            <button type="button" class="boolean" id="Dead on Field">Dead on Field (Greater than 15 seconds)</button>
         </div>
         <div id="Endgame" class="tabContent">
-            <button type="button" class="main" id="EHGS" onclick="touchDetect(Event, EHGS)">High Goal Score</button>
-            <button type="button" class="main-minus" id="EHGSM">-</button>
-            <button type="button" class="main-miss" id="EHGM" onclick="touchDetect(Event, EHGM)">High Goal Miss</button>
-            <button type="button" class="main-minus-miss" id="EHGMM">-</button>
-            <button type="button" class="main" id="EMGS" onclick="touchDetect(Event, EMGS)">Mid Goal Score</button>
-            <button type="button" class="main-minus" id="EMGSM">-</button>
-            <button type="button" class="main-miss" id="EMGM" onclick="touchDetect(Event, EMGM)">Mid Goal Miss</button>
-            <button type="button" class="main-minus-miss" id="EMGMM">-</button>
-            <button type="button" class="main" id="ELGS" onclick="touchDetect(Event, ELGS)">Low Goal Score</button>
-            <button type="button" class="main-minus" id="ELGSM">-</button>
-            <button type="button" class="main-miss" id="ELGM" onclick="touchDetect(Event, ELGM)">Low Goal Miss</button>
-            <button type="button" class="main-minus-miss" id="ELGMM">-</button>
-            <button type="button" class="main" id="EPS" onclick="touchDetect(Event, EPS)">Power Shot</button>
-            <button type="button" class="main-minus" id="EPSM">-</button>
+            <select id="Climb" class="dropdown">
+                <option value="Default">Position</option>
+                <option value="Successful climb">Successful Climb</option>
+                <option value="Parked">Parked</option>
+                <option value="None of above">None of Above</option>
+            </select>
 
-<!--            https://stackoverflow.com/questions/6139225/how-to-detect-a-long-touch-pressure-with-javascript-for-android-and-iphone-->
-
-            <button type="button" class="main" id="EWR" onclick="touchDetect(Event, EWR)">Wobble Rings</button>
-            <button type="button" class="main-minus" id="EWRM">-</button>
-            <button type="button" class="boolean" id="EWSL">Endgame Wobble Start Line</button>
-            <button type="button" class="boolean" id="EWDZ">Auto Wobble Correct Zone</button>
+            <button type="button" class="boolean" id="Balanced">Balanced</button>
 
             <button type="button" class="data" id="send">Send Scouting Data</button>
             <div id = "modal" class = "modal">
