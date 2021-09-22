@@ -1,3 +1,16 @@
+//put url here:
+let url = 'https://23aa-8-47-12-41.ngrok.io';
+
+
+
+
+
+
+
+
+
+
+
 let AL = false, AL1S = 0, AL2S = 0, ASM = 0, TL1S = 0, TL2S = 0, TSM = 0, RC = false, PC = false, DF = false, Bal = false;
 const close = document.getElementById("close");
 const closeQR = document.getElementById("closeQR");
@@ -8,8 +21,6 @@ const QRBtn = document.getElementById("qr");
 
 
 let rqst = new XMLHttpRequest();
-//put url here:
-let url = 'https://23aa-8-47-12-41.ngrok.io';
 let type = "POST"
 let qr;
 
