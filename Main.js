@@ -1,5 +1,5 @@
 //put url here:
-let url = 'https://bfe8-8-20-123-121.ngrok.io';
+let url = 'localhost:118';
 
 
 
@@ -153,10 +153,10 @@ SendBtn.onclick = function () {
 
         Endgame_Position: document.getElementById("Climb").value.toString(),
         Balanced: Bal.toString(),
-
     }));
     resetVar();
     modal.style.display = "block";
+    console.log("Sent");
 }
 
 QRBtn.onclick = function () {
