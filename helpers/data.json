@@ -1,0 +1,11 @@
+{ 
+  "pregame": {
+    "name": null, "team_number": null, "alliance_position": null },
+  "autonomous": {
+    "var1": null, "var2": 0, "var3": 0, "var4": 0 },
+  "teleop": {
+    "var1": 0, "var2": 0, "var3": 0, "var4": null, "var5": null, "var6": null
+  },
+  "endgame": {
+    "var1": null, "var2": null }
+}
