@@ -1,10 +1,10 @@
-import {data} from "../helpers/data"
+import { data } from "../helpers/data"
 import Button from "@mui/material/Button"
 
-function send() {
+async function send() {
     let req = new XMLHttpRequest();
     try {
-        req.open('POST', 'http://localhost:1800', true)
+        req.open('POST', 'http://localhost:3800', true)
         req.setRequestHeader('Content-Type', 'application/json')
         req.send(JSON.stringify(data))
         alert('Data sent!')

@@ -11,10 +11,10 @@ export default function Teleop() {
                 <Button style={{width: 100}} onClick={() => {data.teleop.var1--; document.getElementById('1').innerText=`Level 1 Cells Scored: ${data.teleop.var1}`}}>-</Button>
             </ButtonGroup>
             <ButtonGroup variant='contained' color='primary' aria-label='split button' disableRipple fullWidth disableElevation>
-                <Button id='2' onClick={() => {data.teleop.var2++; document.getElementById('2').innerText=`Level 2 Cells Scored: ${data.teleop.var2}`}}>Level 2 Cells Scored: {data.teleop.var2}</Button>
+                <Button id='2' onClick={() => {data.teleop.var2++; document.getElementById('2').innerText=`Level 2 Cells Scored: ${data.teleop.var2}`}}>Level 2 Cells Scored</Button>
                 <Button style={{width: 100}} onClick={() => {data.teleop.var2--; document.getElementById('2').innerText=`Level 2 Cells Scored: ${data.teleop.var2}`}}>-</Button>
             </ButtonGroup>
-            <ButtonGroup variant='contained' color='secondary' aria-label='split button'  disableRipple fullWidth disableElevation>
+            <ButtonGroup variant='contained' color='secondary' aria-label='split button' disableRipple fullWidth disableElevation>
                 <Button id='3' className='Missed' onClick={() => {data.teleop.var3++; document.getElementById('3').innerText=`Shots Missed: ${data.teleop.var3}`}}>Shots Missed</Button>
                 <Button className='Missed' style={{width: 100}} onClick={() => {data.teleop.var3--; document.getElementById('3').innerText=`Shots Missed: ${data.teleop.var3}`}}>-</Button>
             </ButtonGroup>
