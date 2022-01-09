@@ -1,7 +1,7 @@
 import Button from "@mui/material/Button"
-import {ButtonGroup} from "@mui/material";
-import Send from "../../components/Send";
-import QR from "../../components/QR";
+import { ButtonGroup } from "@mui/material"
+import Send from "../../components/Send"
+import QR from "../../components/QR"
 
 export default function send() {
     return (
