@@ -4,8 +4,9 @@
   "autonomous": {
     "var1": false, "var2": 0, "var3": 0, "var4": 0 },
   "teleop": {
-    "var1": 0, "var2": 0, "var3": 0, "var4": null, "var5": null, "var6": null
+    "var1": 0, "var2": 0, "var3": 0, "var4": false, "var5": false, "var6": false, "var7": false
   },
   "endgame": {
-    "var1": null, "var2": null }
+    "var1": false, "var2": false, "var3": null
+  }
 }
