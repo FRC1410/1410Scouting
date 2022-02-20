@@ -15,8 +15,10 @@ export default function QR() {
     }, [])
 
     return (
-        <Popup trigger={<Button className='Send' variant='contained' disableRipple fullWidth disableElevation>Generate QR Code</Button>} position='bottom center' closeOnDocumentClick>
-            <Image src={src} alt='Scouting Data QR Code' width={500} height={500} />
-        </Popup>
+        <div className="flex justify-center py-4">
+            <Popup trigger={<button className="w-5/6 py-2 rounded text-white text-3xl font-bold bg-blue-500 hover:bg-blue-200 active:bg-blue-400">Generate QR Code</button>} position='bottom center' closeOnDocumentClick>
+                <Image src={src} alt='Scouting Data QR Code' width={500} height={500} />
+            </Popup>
+        </div>
     )
 }

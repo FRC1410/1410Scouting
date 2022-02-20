@@ -1,5 +1,4 @@
 import { data } from "../helpers/data"
-import Button from "@mui/material/Button"
 
 async function send() {
     let req = new XMLHttpRequest();
@@ -16,6 +15,8 @@ async function send() {
 
 export default function Send() {
     return (
-        <Button className='Send' variant='contained' onClick={send} disableRipple fullWidth disableElevation>Send Scouting Data</Button>
+        <div className="flex justify-center py-4">
+            <button className="w-5/6 py-2 rounded text-white text-3xl font-bold bg-blue-500 hover:bg-blue-200 active:bg-blue-400" onClick={send}>Submit Scouting Data</button>
+        </div>
     )
 }
