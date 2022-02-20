@@ -4,6 +4,7 @@ import json from '/public/config.json'
 import Navbar from "../../components/Navbar";
 
 export default function Pregame() {
+    //TODO: Figure out how to update elements
     return (
         <>
             <Navbar page="Pregame" />

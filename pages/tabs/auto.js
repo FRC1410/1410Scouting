@@ -1,28 +1,31 @@
 import { data } from "../../helpers/data"
-import Button from '@mui/material/Button'
-import { ButtonGroup } from "@mui/material"
-import Dropdown from 'react-dropdown'
-import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
 export default function Auto() {
     return (
+        //TODO: Figure out how to update elements
         <>
             <Navbar page="Auto" />
-            <div className='Page'>
-                <Dropdown onChange={(value) => data.autonomous.var1 = value.value} options={['Crossed', 'Did Not Cross']} placeholder="Select an Auto Line State" />
-                <ButtonGroup variant='contained' color='primary' aria-label='split button' disableRipple fullWidth disableElevation>
-                    <Button id='1' onClick={() => {data.autonomous.var2++; document.getElementById('1').innerText=`Level 1 Cells Scored: ${data.autonomous.var2}`}}>Level 1 Cells Scored</Button>
-                    <Button style={{width: 100}} onClick={() => {data.autonomous.var2--; document.getElementById('1').innerText=`Level 1 Cells Scored: ${data.autonomous.var2}`}}>-</Button>
-                </ButtonGroup>
-                <ButtonGroup variant='contained' color='primary' aria-label='split button' disableRipple fullWidth disableElevation>
-                    <Button id='2' onClick={() => {data.autonomous.var3++; document.getElementById('2').innerText=`Level 2 Cells Scored: ${data.autonomous.var3}`}}>Level 2 Cells Scored</Button>
-                    <Button style={{width: 100}} onClick={() => {data.autonomous.var3--; document.getElementById('2').innerText=`Level 2 Cells Scored: ${data.autonomous.var3}`}}>-</Button>
-                </ButtonGroup>
-                <ButtonGroup variant='contained' color='secondary' aria-label='split button'  disableRipple fullWidth disableElevation>
-                    <Button id='3' className='Missed' onClick={() => {data.autonomous.var4++; document.getElementById('3').innerText=`Shots Missed: ${data.autonomous.var4}`}}>Shots Missed</Button>
-                    <Button className='Missed' style={{width: 100}} onClick={() => {data.autonomous.var4--; document.getElementById('3').innerText=`Shots Missed: ${data.autonomous.var4}`}}>-</Button>
-                </ButtonGroup>
+            <div className="flex justify-center py-4">
+                <button className={"w-5/6 py-2 rounded text-white text-3xl font-bold hover:bg-blue-200 " + (data.autonomous.var1 ? "bg-blue-400 active:bg-blue-500" : "bg-blue-500 active:bg-blue-400")} onClick={() => data.autonomous.var1 = !data.autonomous.var1}>Robot Left the Tarmac</button>
+            </div>
+            <h1 className="flex justify-center py-2 text-white text-3xl font-bold">Low Hub Scored</h1>
+            <div className="flex flex-row justify-evenly pb-5">
+                <button className="basis-1/4 rounded-full bg-blue-500 text-white text-7xl font-bold hover:bg-blue-200 active:bg-blue-400" onClick={() => data.autonomous.var2++}>+</button>
+                <h1 className="basis-1/5 text-center text-white text-8xl font-bold">{data.autonomous.var2}</h1>
+                <button className="basis-1/4 rounded-full bg-blue-500 text-white text-7xl font-bold hover:bg-blue-200 active:bg-blue-400" onClick={() => data.autonomous.var2--}>-</button>
+            </div>
+            <h1 className="flex justify-center py-2 text-white text-3xl font-bold">High Hub Scored</h1>
+            <div className="flex flex-row justify-evenly pb-5">
+                <button className="basis-1/4 rounded-full bg-blue-500 text-white text-7xl font-bold hover:bg-blue-200 active:bg-blue-400" onClick={() => data.autonomous.var3++}>+</button>
+                <h1 className="basis-1/5 text-center text-white text-8xl font-bold">{data.autonomous.var3}</h1>
+                <button className="basis-1/4 rounded-full bg-blue-500 text-white text-7xl font-bold hover:bg-blue-200 active:bg-blue-400" onClick={() => data.autonomous.var3--}>-</button>
+            </div>
+            <h1 className="flex justify-center py-2 text-white text-3xl font-bold">Shots Missed</h1>
+            <div className="flex flex-row justify-evenly pb-5">
+                <button className="basis-1/4 rounded-full bg-blue-500 text-white text-7xl font-bold hover:bg-blue-200 active:bg-blue-400" onClick={() => data.autonomous.var4++}>+</button>
+                <h1 className="basis-1/5 text-center text-white text-8xl font-bold">{data.autonomous.var4}</h1>
+                <button className="basis-1/4 rounded-full bg-blue-500 text-white text-7xl font-bold hover:bg-blue-200 active:bg-blue-400" onClick={() => data.autonomous.var4--}>-</button>
             </div>
         </>
     )
