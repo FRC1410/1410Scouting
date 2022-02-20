@@ -9,93 +9,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-a {
-  color: #333;
-  text-decoration: none;
-}
-
-a:hover {
-  cursor: pointer;
-  color: #777777;
-}
-
 nav {
-  background: white;
-  width: 100%;
   font-size: 3vw;
-  display: flex;
-  justify-content: space-evenly;
-  justify-self: stretch;
-  margin-bottom: 5px;
 }
 
 input {
   font-family: "Roboto", sans-serif;
   text-align: center;
-}
-
-.Dropdown-control {
-  background: #5BBEA2;
-  text-align: center;
-  margin: 2px 0;
-  width: 100%;
-  height: 4vw;
-  cursor: pointer;
-  color: white;
-  font-size: 3vw;
-  padding: 0;
-  border: 0;
-}
-
-.Dropdown-control:hover {
-  background: cadetblue;
-}
-
-.Dropdown-control:active {
-  background: teal;
-}
-
-.Dropdown-menu {
-  background: #5BBEA2;
-  box-sizing: border-box;
-  margin: 2px 0;
-  width: 100%;
-  -webkit-overflow-scrolling: touch;
-  cursor: pointer;
-  font-size: 2vw;
-  text-align: center;
-  padding: 0;
-  border: 0;
-}
-
-.Dropdown-option:hover {
-  background: #f2f9fc;
-  color: #333;
-}
-
-.MuiButtonGroup-root {
-  margin: 2px 0;
-  justify-self: stretch;
-  border-radius: 0;
-}
-
-.MuiButtonGroup-grouped {
-  height: 4vw;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  color: white;
-  justify-self: stretch;
-  font-size: 3vw;
-  border-radius: 0;
-  text-transform: none;
-}
-
-.MuiButtonGroup-grouped:hover {
-  background: limegreen;
-}
-
-.MuiButtonGroup-grouped:active {
-  background: #3e8e41
 }
 
 .Missed:hover {
@@ -137,13 +57,7 @@ input {
 footer {
   display: block;
   text-align: center;
-  padding: 30px 0;
+  padding: 0.25rem;
   color: #777;
   margin-top: 60px;
-}
-
-@media only screen and (max-width: 320px) {
-  .MuiButtonGroup-grouped {
-    font-size: 3vmin;
-  }
 }
