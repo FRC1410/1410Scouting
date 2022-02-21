@@ -1,11 +1,11 @@
-import { data } from "../helpers/data"
+import { getAllData } from "/pages/_app"
 
 async function send() {
     let req = new XMLHttpRequest();
     try {
         req.open('POST', 'http://localhost:3800', true)
         req.setRequestHeader('Content-Type', 'application/json')
-        req.send(JSON.stringify(data))
+        req.send(JSON.stringify(getAllData()))
         alert('Data sent!')
     } catch (e) {
         console.error(e)
