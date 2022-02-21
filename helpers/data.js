@@ -1,8 +1,9 @@
-import json from './data.json'
+import json from "./data.json"
 
 export function getData(period, name) {
     if (typeof window !== "undefined") {
         return JSON.parse(localStorage.getItem("session"))[period][name]
+        // return json[period][name]
     } else {
         return json[period][name]
     }
