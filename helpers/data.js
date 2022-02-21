@@ -1,17 +1,19 @@
 import json from './data.json'
 
-
-let data = json
-
 export function getData(period, name) {
-    console.log("Testing: " + data[period][name])
-    return data[period][name]
+    if (typeof window !== "undefined") {
+        return JSON.parse(localStorage.getItem("session"))[period][name]
+    } else {
+        return json[period][name]
+    }
 }
 
 export function setData(period, name, value) {
-    data[period][name] = value
+    let json = JSON.parse(localStorage.getItem("session"))
+    json[period][name] = value
+    localStorage.setItem("session", JSON.stringify(json))
 }
 
 export function getAllData() {
-    return data
+    return JSON.parse(localStorage.getItem("session"))
 }

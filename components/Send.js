@@ -1,4 +1,4 @@
-import { getAllData } from "/pages/_app"
+import { getAllData } from "/helpers/data"
 
 async function send() {
     let req = new XMLHttpRequest();

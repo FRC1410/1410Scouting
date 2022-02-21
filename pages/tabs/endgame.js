@@ -1,6 +1,6 @@
 import Navbar from "../../components/Navbar"
 import { useForceUpdate } from "../../helpers/Refresh"
-import { getData, setData } from "/pages/_app"
+import { getData, setData } from "/helpers/data"
 
 export default function Endgame() {
     const forceUpdate = useForceUpdate()

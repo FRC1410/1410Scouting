@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar"
 import { useForceUpdate } from "../../helpers/Refresh"
-import { getData, setData } from "/pages/_app"
+import { getData, setData } from "/helpers/data"
+import json from "../../helpers/data.json";
 
 export default function Auto() {
     const forceUpdate = useForceUpdate()

@@ -1,5 +1,5 @@
 import config from "../public/config.json"
-import { setData } from "/pages/_app"
+import { setData } from "/helpers/data"
 
 export default function Dropdown() {
     return (

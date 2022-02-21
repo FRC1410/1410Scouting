@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Popup from "reactjs-popup";
-import { getAllData } from "/pages/_app"
-import {useEffect, useState} from "react";
-import QRCode from "qrcode";
+import { getAllData } from "/helpers/data"
+import { useEffect, useState } from "react"
+import QRCode from "qrcode"
 
 export default function QR() {
     const [src, setSrc] = useState('')
