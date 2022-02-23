@@ -1,5 +1,5 @@
 import json from "./data.json"
-import { setCookies, getCookie, checkCookies } from "cookies-next"
+import { setCookies, getCookie, checkCookies, removeCookies } from "cookies-next"
 
 export function setData(period, name, value) {
     let data
@@ -40,7 +40,7 @@ export function getAllData() {
 }
 
 export function resetData() {
-    return setCookies("data", json)
+    return removeCookies("data")
 }
 
 export function setDataServer(period, name, value, req, res) {

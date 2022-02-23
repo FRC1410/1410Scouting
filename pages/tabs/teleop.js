@@ -20,7 +20,7 @@ export default function Teleop() {
                 <h1 className="basis-1/5 text-center text-white text-8xl font-bold">{getData("teleop", "var2")}</h1>
                 <button className="basis-1/4 rounded-full bg-emerald-600 text-white text-7xl font-bold hover:bg-emerald-200 active:bg-teal-600" onClick={() => {setData("teleop", "var2", getData("teleop", "var2") + 1); forceUpdate()}}>+</button>
             </div>
-            <h1 className="flex justify-center py-2 text-white text-3xl font-bold">Shots Missed</h1>
+            <h1 className="flex justify-center py-2 text-white text-3xl font-bold">Wrong Color Scored</h1>
             <div className="flex flex-row justify-evenly pb-5">
                 <button className="basis-1/4 rounded-full bg-emerald-600 text-white text-7xl font-bold hover:bg-emerald-200 active:bg-teal-600" onClick={() => {setData("teleop", "var3", getData("teleop", "var3") - 1); forceUpdate()}}>-</button>
                 <h1 className="basis-1/5 text-center text-white text-8xl font-bold">{getData("teleop", "var3")}</h1>

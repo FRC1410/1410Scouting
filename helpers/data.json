@@ -10,5 +10,8 @@
     },
     "endgame": {
       "var1": false, "var2": false, "var3": false, "var4": "None"
+    },
+    "other": {
+      "invalid_input": null
     }
 }
