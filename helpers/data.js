@@ -1,5 +1,5 @@
 import json from "./data.json"
-import { setCookies, getCookie, getCookies, checkCookies } from "cookies-next"
+import { setCookies, getCookie, checkCookies } from "cookies-next"
 
 export function setData(period, name, value) {
     let data
@@ -36,6 +36,37 @@ export function getData(period, name) {
 }
 
 export function getAllData() {
-    // return JSON.parse(localStorage.getItem("session"))
     return JSON.parse(getCookie("data"))
+}
+
+export function resetData() {
+    return setCookies("data", json)
+}
+
+export function setDataServer(period, name, value, req, res) {
+    let data
+    if (checkCookies("data", { req, res})) {
+        data = getAllDataServer(req, res)
+    } else {
+        data = json
+    }
+
+    data[period][name] = value
+    setCookies("data", JSON.stringify(data), { req, res})
+}
+
+export function getDataServer(period, name, req, res) {
+    let data
+
+    if (checkCookies("data", { req, res})) {
+        data = getAllDataServer(req, res)
+    } else {
+        data = json
+    }
+
+    return data[period][name]
+}
+
+export function getAllDataServer(req, res) {
+    return JSON.parse(getCookie("data", { req, res}))
 }
