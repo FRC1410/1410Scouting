@@ -1,19 +1,23 @@
 import { sendData } from "../../components/Send"
 // import Send from "../../components/Send"
 import QR from "../../components/QR"
-import Navbar from "../../components/Navbar";
-import Reset from "../../components/Reset";
-import { getAllData } from "../../helpers/data";
-
-let data
+import Navbar from "../../components/Navbar"
+import Reset from "../../components/Reset"
+import { getAllData } from "../../helpers/data"
 
 export default function send() {
+    const jsonData = {
+        "pregame": {
+            "name": "Name", "team_number": null, "match_number": "Match #", "alliance_position": null
+        }
+    }
+
     return (
         <>
             <Navbar page="Send" />
             {/*<Send />*/}
-            <div className="flex justify-center py-4" onR>
-                <button className="w-5/6 py-2 rounded text-white text-3xl font-bold bg-emerald-600 hover:bg-emerald-200 active:bg-teal-600" onClick={() => {data = getAllData(); console.log(data)}}>Submit Scouting Data</button>
+            <div className="flex justify-center py-4">
+                <button className="w-5/6 py-2 rounded text-white text-3xl font-bold bg-emerald-600 hover:bg-emerald-200 active:bg-teal-600">Submit Scouting Data</button>
             </div>
             <QR />
             <Reset />
@@ -22,8 +26,7 @@ export default function send() {
 }
 
 export async function getServerSideProps() {
-    console.log(data)
-    await sendData(data)
+    await sendData()
     return {
         props: {
         }

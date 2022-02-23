@@ -1,7 +1,8 @@
-import json from "/helpers/data.json"
 const { GoogleSpreadsheet } = require("google-spreadsheet")
 
-export async function sendData(data) {
+//https://www.npmjs.com/package/google-spreadsheet
+
+export async function sendData() {
     const doc = new GoogleSpreadsheet("1HfYjHhirqyapYwD0imXfGjIwiJ3whPs1M35t--MXrQA")
     await doc.useServiceAccountAuth({
         client_email: process.env.GOOGLE_SHEETS_CLIENT_EMAIL,
@@ -9,11 +10,8 @@ export async function sendData(data) {
     })
     await doc.loadInfo()
 
-    const sheet = doc.sheetsByIndex[0]
-    await sheet.addRow(json)
-    // if (data !== undefined) {
-    //     await sheet.addRow(data)
-    // }
+    const sheet = await doc.sheetsByIndex[0]
+    await sheet.loadHeaderRow(1)
 }
 
 export default function Send() {
