@@ -2,6 +2,7 @@ import Navbar from "../../components/Navbar"
 import Dropdown from "../../components/Dropdown"
 import { useForceUpdate } from "../../helpers/Refresh"
 import { getData, setData } from "/helpers/data"
+import Dropdown_Name from "../../components/Dropdown_Name"
 
 export default function Pregame() {
     const forceUpdate = useForceUpdate()
@@ -10,7 +11,7 @@ export default function Pregame() {
         <>
             <Navbar page="Pregame" />
             <div className="flex flex-row justify-evenly py-4">
-                <input className="basis-1/3 w-1/3 rounded py-2 text-black text-2xl" onChange={(event) => setData("pregame", "name", event.target.value)} onClick={() => forceUpdate()} type='text' placeholder={getData("pregame", "name")} />
+                <Dropdown_Name />
                 <input className="basis-1/3 w-1/3 rounded py-2 text-black text-2xl" onChange={(event) => setData("pregame", "match_number", event.target.value)} onClick={() => forceUpdate()} type='text' placeholder={getData("pregame", "match_number")} />
             </div>
             <div className="flex justify-center py-4">
