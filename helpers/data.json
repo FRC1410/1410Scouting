@@ -1,0 +1,17 @@
+{
+    "pregame": {
+      "name": "Name", "team_number": null, "match_number": "Match #", "alliance_position": null
+    },
+    "auto": {
+      "var1": false, "var2": 0, "var3": 0, "var4": 0
+    },
+    "teleop": {
+      "var1": 0, "var2": 0, "var3": 0, "var4": false, "var5": false, "var6": false, "var7": false
+    },
+    "endgame": {
+      "var1": false, "var2": false, "var3": false, "var4": "None"
+    },
+    "other": {
+      "invalid_input": null
+    }
+}

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: black;
+  color: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  font-size: 3vw;
+}
+
+input {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.Missed:hover {
+  background: #FF0000;
+}
+
+.Missed:active {
+  background: #950000;
+}
+
+.Send {
+  background: #2b64ba;
+  height: 4vw;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: white;
+  justify-self: stretch;
+  font-size: 3vw;
+  border-radius: 0;
+  text-transform: none;
+}
+
+.Send:hover {
+  background: #6495EDFF;
+}
+
+.Send:active {
+  background: #173965;
+}
+
+.popup-content {
+  background: #f2f2f2;
+  color: black;
+  justify-self: stretch;
+  padding: 1vw;
+  border-radius: 1vw;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  padding: 0.25rem;
+  color: #777;
+  margin-top: 60px;
+}
