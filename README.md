@@ -1,34 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 1410 Scouting Website
+## Overview
+Hi there!
 
-## Getting Started
+Welcome to the 1410 scouting server! This is where we collect data in our matches for FRC team 1410, the Kraken using the [Nextjs](https://nextjs.org/) framework
 
-First, run the development server:
+This image is also hosted on [DockerHub](https://hub.docker.com/r/rowane/1410-scouting-container) and at our team website at [frc1410.org/scouting](https://frc1410.org/scouting)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Feel free to modify to your heart's content!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running
+### Docker
+1. Install docker
+2. Run docker pull rowane/1410-scouting-container
+3. Run docker run -dp [Your Port Here]:3000 rowane/1410-scouting-container (-d flag not necessary on servers)
+4. Navigate to [localhost:[Your Port Here]](https://localhost:3000)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### GitHub
+1. Install git
+2. Install Nodejs
+3. Run git clone https://github.com/RowanEklund/1410Scouting.git
+4. Navigate to the project directory
+5. Run npm run build
+6. Run npm run start
+7. Navigate to [localhost:3000](https://localhost:3000)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Modifying
+1. Install git
+2. Run git clone https://github.com/RowanEklund/1410Scouting.git
+3. Modify away! (Team number and scout name data is found in /public/config.json)

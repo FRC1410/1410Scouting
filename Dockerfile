@@ -6,7 +6,7 @@
 
 # Pull
 # docker pull rowane/1410-scouting-container
-# docker run -dp 3000:3000 rowane/1410-scouting-container (Port can be anything-you-want:3000, -d flag not necessary on servers)
+# docker run -dp [Your Port Here]:3000 rowane/1410-scouting-container (-d flag not necessary on servers)
 FROM node:16
 
 WORKDIR /app
