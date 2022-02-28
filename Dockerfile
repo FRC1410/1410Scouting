@@ -1,12 +1,13 @@
 # Image name rowane/1410-scouting-container:latest
 
 # Push
-# docker build -t rowane/1410-scouting-container:latest .
-# docker push rowane/1410-scouting-container:latest
+# docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t rowane/1410-scouting-container:latest --push . (This is gonna take a while)
 
 # Pull
 # docker pull rowane/1410-scouting-container
-# docker run -dp [Your Port Here]:3000 rowane/1410-scouting-container (-d flag not necessary on servers)
+# docker buildx imagetools inspect rowane/1410-scouting-container:latest
+# Get name of platform desired
+# docker run -dp [Your Port Here]:3000 [Paste Name Here] (-d flag not necessary on servers)
 FROM node:16
 
 WORKDIR /app
