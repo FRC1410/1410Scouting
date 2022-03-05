@@ -42,12 +42,9 @@ export async function sendData(req, res) {
             "How many opposing alliance balls scored (Teleop)": getDataServer("teleop", "var3", req, res),
             "Did they play defense?": getDataServer("teleop", "var4", req, res),
             "Did another team play defense on them?": getDataServer("teleop", "var5", req, res),
-            "Dead on field for more than 15 seconds ": getDataServer("teleop", "var6", req, res),
+            "Dead on field for more than 15 seconds": getDataServer("teleop", "var6", req, res),
             "2+ Fouls": getDataServer("teleop", "var7", req, res),
-            "No Climb Attempted": getDataServer("endgame", "var1", req, res),
-            "Climb Failed": getDataServer("endgame", "var2", req, res),
-            "Climbed Successfully": getDataServer("endgame", "var3", req, res),
-            "Did they climb?": getDataServer("endgame", "var4", req, res)
+            "Did they climb?": getDataServer("endgame", "var1", req, res),
         }).then(row => rowNum = row)
     }
 
