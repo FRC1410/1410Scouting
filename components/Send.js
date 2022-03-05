@@ -5,8 +5,8 @@ const { GoogleSpreadsheet } = require("google-spreadsheet")
 let invalidInputFlag = null
 let rowNum = 2
 
-//https://www.npmjs.com/package/google-spreadsheet
-//https://docs.google.com/spreadsheets/d/1HfYjHhirqyapYwD0imXfGjIwiJ3whPs1M35t--MXrQA/edit#gid=0
+// https://www.npmjs.com/package/google-spreadsheet
+// https://docs.google.com/spreadsheets/d/1HfYjHhirqyapYwD0imXfGjIwiJ3whPs1M35t--MXrQA/edit#gid=0
 
 export async function sendData(req, res) {
     const doc = new GoogleSpreadsheet("1HfYjHhirqyapYwD0imXfGjIwiJ3whPs1M35t--MXrQA")
@@ -33,21 +33,21 @@ export async function sendData(req, res) {
             "Team Number": getDataServer("pregame", "team_number", req, res),
             "Match Number": getDataServer("pregame", "match_number", req, res),
             "Alliance Position": getDataServer("pregame", "alliance_position", req, res),
-            "Left Tarmac": getDataServer("auto", "var1", req, res),
-            "Auto Low Hub": getDataServer("auto", "var2", req, res),
-            "Auto High Hub": getDataServer("auto", "var3", req, res),
-            "Auto Shots Missed": getDataServer("auto", "var4", req, res),
-            "Teleop Low Hub": getDataServer("teleop", "var1", req, res),
-            "Teleop High Hub": getDataServer("teleop", "var2", req, res),
-            "Teleop Wrong Color Scored": getDataServer("teleop", "var3", req, res),
-            "Played Defense": getDataServer("teleop", "var4", req, res),
-            "Was Defended": getDataServer("teleop", "var5", req, res),
-            "Dead on Field": getDataServer("teleop", "var6", req, res),
+            "Did they taxi?": getDataServer("auto", "var1", req, res),
+            "Cargo scored in low hub (Auto)": getDataServer("auto", "var2", req, res),
+            "Cargo scored in high hub (Auto)": getDataServer("auto", "var3", req, res),
+            "How many missed shots (Auto)": getDataServer("auto", "var4", req, res),
+            "Cargo scored in low hub (Teleop)": getDataServer("teleop", "var1", req, res),
+            "Cargo scored in high hub (Teleop)": getDataServer("teleop", "var2", req, res),
+            "How many opposing alliance balls scored (Teleop)": getDataServer("teleop", "var3", req, res),
+            "Did they play defense?": getDataServer("teleop", "var4", req, res),
+            "Did another team play defense on them?": getDataServer("teleop", "var5", req, res),
+            "Dead on field for more than 15 seconds ": getDataServer("teleop", "var6", req, res),
             "2+ Fouls": getDataServer("teleop", "var7", req, res),
             "No Climb Attempted": getDataServer("endgame", "var1", req, res),
             "Climb Failed": getDataServer("endgame", "var2", req, res),
             "Climbed Successfully": getDataServer("endgame", "var3", req, res),
-            "Height Achieved": getDataServer("endgame", "var4", req, res)
+            "Did they climb?": getDataServer("endgame", "var4", req, res)
         }).then(row => rowNum = row)
     }
 
