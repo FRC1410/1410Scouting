@@ -1,6 +1,6 @@
 {
     "pregame": {
-      "name": "Name", "team_number": null, "match_number": "Match #", "alliance_position": null
+      "name": "Name", "team_number": "Team #", "match_number": "Match #", "alliance_position": null
     },
     "auto": {
       "var1": false, "var2": 0, "var3": 0, "var4": 0

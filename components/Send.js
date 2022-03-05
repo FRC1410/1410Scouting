@@ -20,7 +20,7 @@ export async function sendData(req, res) {
 
     if (getDataServer("pregame", "name", req, res) === "Name") {
         invalidInputFlag = "Please Enter Your Name!"
-    } else if (getDataServer("pregame", "team_number", req, res) === null) {
+    } else if (getDataServer("pregame", "team_number", req, res) === "Team #") {
         invalidInputFlag = "Please Enter the Team Number!"
     } else if (getDataServer("pregame", "match_number", req, res) === "Match #") {
         invalidInputFlag = "Please Enter the Match Number!"
