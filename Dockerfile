@@ -1,6 +1,7 @@
 # Image name rowane/1410-scouting-container:latest
 
 # Push
+# docker buildx create --use
 # docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t rowane/1410-scouting-container:latest --push . (This is gonna take a while)
 
 # Pull
