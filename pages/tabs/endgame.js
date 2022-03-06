@@ -9,10 +9,10 @@ export default function Endgame() {
         <>
             <Navbar page="Endgame" />
             <div className="flex justify-center py-4">
-                <button className={"w-5/6 py-2 rounded text-white text-3xl font-bold background-color:bg-emerald-600 " + (getData("endgame", "var1") === 'Did not attempt' ? "bg-gray-400 active:bg-emerald-600" : "bg-emerald-600 active:bg-gray-400")} onClick={() => {setData("endgame", "var1", 'Did not attempt'); forceUpdate()}}>No Climb Attempted</button>
+                <button className={"w-5/6 py-2 rounded text-white text-3xl font-bold background-color:bg-emerald-600 " + (getData("endgame", "var1") === "Did not attempt" ? "bg-gray-400 active:bg-emerald-600" : "bg-emerald-600 active:bg-gray-400")} onClick={() => {setData("endgame", "var1", "Did not attempt"); forceUpdate()}}>No Climb Attempted</button>
             </div>
             <div className="flex justify-center py-4">
-                <button className={"w-5/6 py-2 rounded text-white text-3xl font-bold background-color:bg-emerald-600 " + (getData("endgame", "var1") === 'Failed attempt' ? "bg-gray-400 active:bg-emerald-600" : "bg-emerald-600 active:bg-gray-400")} onClick={() => {setData("endgame", "var1", 'Failed attempt'); forceUpdate()}}>Climb Failed</button>
+                <button className={"w-5/6 py-2 rounded text-white text-3xl font-bold background-color:bg-emerald-600 " + (getData("endgame", "var1") === "Failed attempt" ? "bg-gray-400 active:bg-emerald-600" : "bg-emerald-600 active:bg-gray-400")} onClick={() => {setData("endgame", "var1", "Failed attempt"); forceUpdate()}}>Climb Failed</button>
             </div>
             <div className="flex justify-center py-4">
                 <button className={"w-5/6 py-2 rounded text-white text-3xl font-bold background-color:bg-emerald-600 " + (getData("endgame", "var2") ? "bg-gray-400 active:bg-emerald-600" : "bg-emerald-600 active:bg-gray-400")} onClick={() => {setData("endgame", "var2", !getData("endgame", "var2")); forceUpdate()}}>Climbed Successfully</button>

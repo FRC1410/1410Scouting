@@ -44,7 +44,8 @@ export async function sendData(req, res) {
             "Did another team play defense on them?": getDataServer("teleop", "var5", req, res),
             "Dead on field for more than 15 seconds": getDataServer("teleop", "var6", req, res),
             "2+ Fouls": getDataServer("teleop", "var7", req, res),
-            "Did they climb?": getDataServer("endgame", "var1", req, res),
+            "Did they climb?": getDataServer("endgame", "var2", req, res),
+            "How did they climb?": getDataServer("endgame", "var1", req ,res)
         }).then(row => rowNum = row)
     }
 
