@@ -28,6 +28,7 @@ export async function sendData(req, res) {
         invalidInputFlag = "Please Enter the Alliance Position of the Team!"
     } else {
         invalidInputFlag = null
+//        console.log(await sheet.getRows(1));
         await sheet.addRow({
             "Name": getDataServer("pregame", "name", req, res),
             "Team Number": getDataServer("pregame", "team_number", req, res),
