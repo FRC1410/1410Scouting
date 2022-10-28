@@ -5,7 +5,6 @@ import Reset from "../../components/Reset"
 import { getData } from "../../helpers/data"
 
 export default function send() {
-    // console.log(getData("other", "invalid_input"))
     return (
         <>
             <Navbar page="Send" />

@@ -7,7 +7,6 @@ export default function Auto() {
     const forceUpdate = useForceUpdate()
 
     return (
-        //TODO: Figure out how to update elements
         <>
             <Navbar page="Auto" />
             <div className="flex justify-center py-4">
