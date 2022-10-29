@@ -8,7 +8,7 @@
 # docker pull rowane/1410-scouting-container
 # docker buildx imagetools inspect rowane/1410-scouting-container:latest
 # Get name of platform desired
-# docker run -dp [Your Port Here]:3000 [Paste Name Here] (-d flag not necessary on servers)
+# docker run -dp [Your Port Here]:3000 [Paste Name Here] (-d flag not necessary on servers, your port is the port that you want running the app on your host computer)
 FROM node:16
 
 WORKDIR /app
