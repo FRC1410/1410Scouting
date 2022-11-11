@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Popup from "reactjs-popup";
-import { getAllData } from "/helpers/data"
+import { getAllData } from "../helpers/data"
 import { useEffect, useState } from "react"
 import QRCode from "qrcode"
 

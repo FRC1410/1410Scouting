@@ -3,7 +3,6 @@ import { setCookies, getCookie, checkCookies, removeCookies } from "cookies-next
 
 export function setData(period, name, value) {
     let data
-
     if (checkCookies("data")) {
         data = getAllData()
     } else {
@@ -16,7 +15,6 @@ export function setData(period, name, value) {
 
 export function getData(period, name) {
     let data
-
     if (checkCookies("data")) {
         data = getAllData()
     } else {

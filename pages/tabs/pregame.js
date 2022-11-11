@@ -1,7 +1,7 @@
 import Navbar from "../../components/Navbar"
 import Dropdown from "../../components/Dropdown"
 import { useForceUpdate } from "../../helpers/Refresh"
-import { getData, setData } from "/helpers/data"
+import { getData, setData } from "../../helpers/data"
 import Reset from "../../components/Reset"
 
 export default function Pregame() {

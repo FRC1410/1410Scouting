@@ -2,7 +2,6 @@ import { sendData } from "../../components/Send"
 import QR from "../../components/QR"
 import Navbar from "../../components/Navbar"
 import Reset from "../../components/Reset"
-import { getData } from "../../helpers/data"
 
 export default function send() {
     return (
