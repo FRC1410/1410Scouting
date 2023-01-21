@@ -7,7 +7,7 @@ export default function Teleop() {
 
     return (
         <>
-            <Navbar page="Teleop" />
+            <Navbar pageNum={3} />
             <h1 className="flex justify-center py-2 text-white text-3xl font-bold">High Node Scored</h1>
             <div className="flex flex-row justify-evenly pb-5">
                 <button className="basis-1/4 rounded-full bg-emerald-600 text-white text-7xl font-bold background-color:bg-emerald-600 active:bg-gray-400" onClick={() => {setData("teleop", "var1", getData("teleop", "var1") - 1); forceUpdate()}}>-</button>

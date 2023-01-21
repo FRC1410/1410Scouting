@@ -7,7 +7,7 @@ import { getData } from "../../helpers/data"
 export default function send() {
     return (
         <>
-            <Navbar page="Send" />
+            <Navbar pageNum={4} />
             <QR />
             <Reset />
         </>

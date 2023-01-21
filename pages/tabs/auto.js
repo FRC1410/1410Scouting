@@ -8,7 +8,7 @@ export default function Auto() {
 
     return (
         <>
-            <Navbar page="Auto" />
+        <Navbar pageNum={2} />
             <div className="flex justify-center py-4">
                 <button className={"w-5/6 py-2 rounded text-white text-3xl font-bold background-color:bg-emerald-600 " + (getData("auto", "var1") ? "bg-gray-400 active:bg-emerald-600" : "bg-emerald-600 active:bg-gray-400")} onClick={() => {setData("auto", "var1", !getData("auto", "var1")); forceUpdate()}}>Robot Left the Community</button>
             </div>
