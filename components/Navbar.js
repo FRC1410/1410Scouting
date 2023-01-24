@@ -14,11 +14,11 @@ const PageName = [
 
 export default function Navbar({ pageNum }) {
     return (
-        <nav className={`flex filter drop-shadow-md ${navPrimary} px-4 py-8 h-14 my-2 items-center justify-evenly`}>
-            <a href={PageName[pageNum - 1].reference} className={"basis-1/3 rounded text-white px-3 ${navSecondary}"}>
+        <nav className={`flex filter drop-shadow-md ${navPrimary} px-4 py-8 h-14 my-2 justify-around items-center`}>
+            <a href={PageName[pageNum - 1].reference} className={" rounded text-white pl-2px ${navSecondary} "}>
                 Back
             </a>
-            <a href={PageName[pageNum + 1].reference} className={"basis-1/3 rounded text-white px-3 ${navSecondary}"}>
+            <a href={PageName[pageNum + 1].reference} className={" rounded text-white pr-2px ${navSecondary} "}>
                 Forward
             </a>
         </nav>

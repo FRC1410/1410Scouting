@@ -10,7 +10,7 @@ export default function Auto() {
         <>
         <Navbar pageNum={2} />
             <div className="flex justify-center py-4">
-                <button className={"w-5/6 py-2 rounded text-white text-3xl font-bold background-color:bg-emerald-600 " + (getData("auto", "var1") ? "bg-gray-400 active:bg-emerald-600" : "bg-emerald-600 active:bg-gray-400")} onClick={() => {setData("auto", "var1", !getData("auto", "var1")); forceUpdate()}}>Robot Left the Community</button>
+                <button className={"w-5/6 py-2 rounded text-white text-3xl font-bold " + (getData("auto", "var1") ? "bg-gray-400 active:bg-emerald-600" : "bg-emerald-600 active:bg-gray-400")} onClick={() => {setData("auto", "var1", !getData("auto", "var1")); forceUpdate()}}>Robot Left the Community</button>
             </div>
             <h1 className="flex justify-center py-2 text-white text-3xl font-bold">Pieces scored on high nodes</h1>
             <div className="flex flex-row justify-evenly pb-5">
@@ -31,7 +31,8 @@ export default function Auto() {
                 <button className="basis-1/4 rounded-full bg-emerald-600 text-white text-7xl font-bold background-color:bg-emerald-600 active:bg-gray-400" onClick={() => {setData("auto", "var4", getData("auto", "var4") + 1); forceUpdate()}}>+</button>
             </div>
             <div className="flex flex-row justify-evenly py-4">
-                <button className={"w-5/6 py-2 rounded text-white text-3xl font-bold background-color:bg-emerald-600 " + (getData("auto", "var5") ? "bg-gray-400 active:bg-emerald-600" : "bg-emerald-600 active:bg-gray-400")} onClick={() => {setData("auto", "var1", !getData("auto", "var5")); forceUpdate()}}>Robot was Engaged</button>
+                <button className={"w-5/6 py-2 rounded text-white text-3x1 font-bold " + (getData("auto", "var5") ? "bg-gray-400 active:bg-emerald-600" : "bg-emerald-600 active:bg-gray-400")} onClick={() => {setData("auto", "var5", !getData("auto", "var5")); forceUpdate()}}>Did they Dock?</button>
+                <button className={"w-5/6 py-2 rounded text-white text-3xl font-bold " + (getData("auto", "var6") ? "bg-gray-400 active:bg-emerald-600" : "bg-emerald-600 active:bg-gray-400")} onClick={() => {setData("auto", "var6", !getData("auto", "var6")); forceUpdate()}}>Did they Engage?</button>
             </div>
         </>
     )
