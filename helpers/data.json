@@ -3,10 +3,10 @@
       "name": "Name", "team_number": "Team #", "match_number": "Match #", "alliance_position": null
     },
     "auto": {
-      "var1": false, "var2": 0, "var3": 0, "var4": 0, "var5": false, "var6": false
+      "Robot left Community?": false, "High Cone Auto": 0, "High Cube Auto": 0, "Mid Cone Auto": 0, "Mid Cube Auto": 0, "Hybrid Cone Auto": 0, "Hybrid Cube Auto": 0, "Docked Auto": false, "Engaged Auto": false
     },
     "teleop": {
-      "var1": 0, "var2": 0, "var3": 0, "var4": false, "var5": false, "var6": false, "var7": false, "var8": false, "var9": false
+      "High Cone Teleop": 0, "High Cube Teleop": 0, "Mid Cone Teleop": 0, "Mid Cube Teleop": 0, "Hybrid Cone Teleop": 0, "Hybrid Cube Teleop": 0, "Played Defense": false, "Was Defended": false, "Docked Teleop": false, "Dead on Field": false, "2+ Fouls": false, "Engaged Teleop": false
     },
     "endgame": {
       "var1": "None", "var2": false

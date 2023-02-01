@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const navPrimary = "bg-green-700"
+const navPrimary = "bg-black"
 const navSecondary = "bg-green-900"
 
 const PageName = [
@@ -14,12 +14,12 @@ const PageName = [
 
 export default function Navbar({ pageNum }) {
     return (
-        <nav className={`flex filter drop-shadow-md ${navPrimary} px-4 py-8 h-14 my-2 justify-around items-center`}>
-            <a href={PageName[pageNum - 1].reference} className={" rounded text-white pl-2px ${navSecondary} "}>
-                Back
+        <nav className={`flex filter drop-shadow-md ${navPrimary} px-4 h-14 justify-between items-center`}>
+            <a href={PageName[pageNum - 1].reference} className={"basis-1/6 text-2xl rounded text-center text-white py-2 pl-1px bg-emerald-600 "}>
+                {'<'}
             </a>
-            <a href={PageName[pageNum + 1].reference} className={" rounded text-white pr-2px ${navSecondary} "}>
-                Forward
+            <a href={PageName[pageNum + 1].reference} className={"basis-1/6 text-2xl rounded text-center text-white py-2 pr-1px bg-emerald-600 "}>
+                {'>'}
             </a>
         </nav>
     )
