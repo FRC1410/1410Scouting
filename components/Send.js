@@ -9,7 +9,7 @@ let rowNum = 2
 // https://docs.google.com/spreadsheets/d/1HfYjHhirqyapYwD0imXfGjIwiJ3whPs1M35t--MXrQA/edit#gid=0
 
 export async function sendData(req, res) {
-    const doc = new GoogleSpreadsheet("1HfYjHhirqyapYwD0imXfGjIwiJ3whPs1M35t--MXrQA")
+    const doc = new GoogleSpreadsheet("164TJXxHoXtYHXCQ8efwTFDc7zuaHzW21zu5xxKHVli4")
     await doc.useServiceAccountAuth({
         client_email: process.env.GOOGLE_SHEETS_CLIENT_EMAIL,
         private_key: process.env.GOOGLE_SHEETS_PRIVATE_KEY.replace(/\n/, '\n')
@@ -34,19 +34,27 @@ export async function sendData(req, res) {
             "Team Number": getDataServer("pregame", "team_number", req, res),
             "Match Number": getDataServer("pregame", "match_number", req, res),
             "Alliance Position": getDataServer("pregame", "alliance_position", req, res),
-            "Did they taxi?": getDataServer("auto", "var1", req, res),
-            "Cargo scored in low hub (Auto)": getDataServer("auto", "var2", req, res),
-            "Cargo scored in high hub (Auto)": getDataServer("auto", "var3", req, res),
-            "How many missed shots (Auto)": getDataServer("auto", "var4", req, res),
-            "Cargo scored in low hub (Teleop)": getDataServer("teleop", "var1", req, res),
-            "Cargo scored in high hub (Teleop)": getDataServer("teleop", "var2", req, res),
-            "How many opposing alliance balls scored (Teleop)": getDataServer("teleop", "var3", req, res),
-            "Did they play defense?": getDataServer("teleop", "var4", req, res),
-            "Did another team play defense on them?": getDataServer("teleop", "var5", req, res),
-            "Dead on field for more than 15 seconds": getDataServer("teleop", "var6", req, res),
-            "2+ Fouls": getDataServer("teleop", "var7", req, res),
-            "Did they climb?": getDataServer("endgame", "var2", req, res),
-            "How did they climb?": getDataServer("endgame", "var1", req ,res)
+            "Robot left Community?": getDataServer("auto", "Robot left Community?", req, res),
+            "High Cone Auto": getDataServer("auto", "High Cone Auto", req, res),
+            "High Cube Auto": getDataServer("auto", "High Cube Auto", req, res),
+            "Mid Cone Auto": getDataServer("auto", "Mid Cone Auto", req, res),
+            "Mid Cube Auto": getDataServer("auto", "Mid Cube Auto", req, res),
+            "Hybrid Cone Auto": getDataServer("auto", "Hybrid Cone Auto", req, res),
+            "Hybrid Cube Auto": getDataServer("auto", "Hybrid Cube Auto", req, res),
+            "Docked Auto": getDataServer("auto", "Docked Auto", req, res),
+            "Engaged Auto": getDataServer("auto", "Engaged Auto", req, res),
+            "High Cone Teleop": getDataServer("teleop", "High Cone Teleop", req, res),
+            "High Cube Teleop": getDataServer("teleop", "High Cube Teleop", req, res),
+            "Mid Cone Teleop": getDataServer("teleop", "Mid Cone Teleop", req, res),
+            "Mid Cube Teleop": getDataServer("teleop", "Mid Cube Teleop", req, res),
+            "Hybrid Cone Teleop": getDataServer("teleop", "Hybrid Cone Teleop", req, res),
+            "Hybrid Cube Teleop": getDataServer("teleop", "Hybrid Cube Teleop", req, res),
+            "Played Defense": getDataServer("teleop", "Played Defense", req, res),
+            "Was Defended": getDataServer("teleop", "Was Defended", req, res),
+            "Docked Teleop": getDataServer("teleop", "Docked Teleop", req, res),
+            "Dead on Field": getDataServer("teleop", "Dead on Field", req, res),
+            "2+ Fouls": getDataServer("teleop", "2+ Fouls", req, res),
+            "Engaged Teleop": getDataServer("teleop", "Engaged Teleop", req, res),
         }).then(row => rowNum = row)
     }
 
