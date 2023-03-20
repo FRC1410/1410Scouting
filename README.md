@@ -11,11 +11,10 @@ Feel free to modify to your heart's content!
 ## Running
 ### Docker
 1. Install docker
-2. Run docker pull rowane/1410-scouting-container
-3. Run docker buildx imagetools inspect rowane/1410-scouting-container:latest
-4. Get name of platform desired
-5. Run docker run -dp [Your Port Here]:3000 [Paste Name Here] (-d flag not necessary on servers)
-6. Navigate to [localhost:[Your Port Here]](https://localhost:3000)
+2. Run docker buildx imagetools inspect rowane/1410-scouting-container:latest
+3. Get name of platform desired
+4. Run docker run -dp [Your Port Here]:3000 [Paste Name Here] (-d flag not necessary on servers)
+5. Navigate to [localhost:[Your Port Here]](https://localhost:3000)
 
 ### GitHub
 1. Install git
